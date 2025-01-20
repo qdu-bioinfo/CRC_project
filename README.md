@@ -65,7 +65,7 @@ The script will compute the variance explained by the disease status (i.e. CRC) 
 ### Stage 3 Features selection   
 Filter features based on 8 common feature selection tools.
 ```R
-  Rscript ./Benchmark/Process_profile/D.R
+  Rscript ./Benchmark/Process_profile/2_select_feature.R
 ```
 - The script **2_select_feature.R** includes feature selection methods such as LEfSe, MaAsLin2, ANCOM-II, T-test, metagenomeSeq, and the two-sided Wilcoxon test.
 ```python
