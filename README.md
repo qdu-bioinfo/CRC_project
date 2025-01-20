@@ -67,22 +67,22 @@ Filter features based on 8 common feature selection tools.
 ```R
   Rscript ./Benchmark/Process_profile/2_select_feature.R
 ```
+- The script **2_select_feature.R** includes feature selection methods such as LEfSe, MaAsLin2, ANCOM-II, T-test, metagenomeSeq, and the two-sided Wilcoxon test.
 ```python
   python ./Benchmark/Process_profile/2_select_feature.py
 ```
-- The script **2_select_feature.R** includes feature selection methods such as LEfSe, MaAsLin2, ANCOM-II, T-test, metagenomeSeq, and the two-sided Wilcoxon test.
 - The script **2_select_feature.py** incorporates **RFECV** for feature selection.
 ```R
   Rscript ./Benchmark/Process_profile/3_merger_feature.R
 ```
+- The script **3_merger_feature** consolidates the features selected by different tools, including LEfSe, MaAsLin2, ANCOM-II, T-test, metagenomeSeq, and the two-sided Wilcoxon test, into a single table. Each column in the table represents the features selected by a specific tool.
 ```python
   python ./Benchmark/Process_profile/4_feature_frequence.py
 ```
+- The script **4_feature_frequence.py** calculates the frequency at which each feature is selected by the different tools.
 ```python
   python ./Benchmark/Process_profile/5_Synergistic_feature.py
 ```
-- The script **3_merger_feature** consolidates the features selected by different tools, including LEfSe, MaAsLin2, ANCOM-II, T-test, metagenomeSeq, and the two-sided Wilcoxon test, into a single table. Each column in the table represents the features selected by a specific tool.
-- The script **4_feature_frequence.py** calculates the frequency at which each feature is selected by the different tools.
 - The script **5_Synergistic_feature.py** is a synergistic feature selection tool that consolidates features identified by LEfSe, MaAsLin2, and ANCOM-II. Then this set was refined by the Max-Relevance and Min-Redundancy (mRMR) method alongside an iterative feature elimination (IFE) step to finalize the optimal biomarkers for CRC.
 ### Stage 4 Machine learning models
 #### *Model construction* 
