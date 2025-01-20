@@ -4,15 +4,15 @@ Colorectal cancer (CRC) continues to be a major global public health challenge. 
 * [Installation](#installation)
   * [Software](#software)
   * [Software setup](#software-setup)
-* [CRC Benchmark Workflow](#CRC Benchmark Workflow)
+* [CRC Benchmark Workflow](#CRC-Benchmark-Workflow)
   * [Stage 1 Differential signature identification](#stage-1-differential-signature-identification)
-  * [Stage 2 Meta analysis](#Stage 2 Meta analysis)
-  * [Stage 3 Features selection](#Stage 3 Features selection)
-  * [Stage 4 Machine learning models](#stage-4-Machine learning models)
+  * [Stage 2 Meta analysis](#stage-2-meta-analysis)
+  * [Stage 3 Features selection](#stage-3-features-selection)
+  * [Stage 4 Machine learning models](#stage-4-machine-learning-models)
 * [Meta_iTL](#Meta_iTL)
-  * [*Subset selection and matching by a mutual nearest neighbor set algorithm*](#*Subset selection and matching by a mutual nearest neighbor set algorithm*)
-  * [*Feature extraction and initial model*](#*Feature extraction and initial model*)
-  * [*Final model training*](#*Final model training*)
+  * [Subset selection and matching by a mutual nearest neighbor set algorithm](#Subset-selection-and-matching-by-a-mutual-nearest-neighbor-set-algorithm)
+  * [Feature extraction and initial model](#Feature- extraction- and- initial-model)
+  * [Final model training](#Final model training)
 ## Installation
 ### Software
 - R v.4.1.3 or newer (https://www.r-project.org)
@@ -68,7 +68,7 @@ Filter features based on 8 common feature selection tools.
 $ Rscript ./Benchmark/Process_profile/2_select_feature.R
 ```
 ```python
-python ./Benchmark/Process_profile/2_select_feature.py
+$ python ./Benchmark/Process_profile/2_select_feature.py
 ```
 - The script **2_select_feature.R** includes feature selection methods such as LEfSe, MaAsLin2, ANCOM-II, T-test, metagenomeSeq, and the two-sided Wilcoxon test.
 - The script **2_select_feature.py** incorporates **RFECV** for feature selection.
@@ -76,10 +76,10 @@ python ./Benchmark/Process_profile/2_select_feature.py
 $ Rscript ./Benchmark/Process_profile/3_merger_feature.R
 ```
 ```python
-python ./Benchmark/Process_profile/4_feature_frequence.py
+$ python ./Benchmark/Process_profile/4_feature_frequence.py
 ```
 ```python
-python ./Benchmark/Process_profile/5_Synergistic_feature.py
+$ python ./Benchmark/Process_profile/5_Synergistic_feature.py
 ```
 - The script **3_merger_feature** consolidates the features selected by different tools, including LEfSe, MaAsLin2, ANCOM-II, T-test, metagenomeSeq, and the two-sided Wilcoxon test, into a single table. Each column in the table represents the features selected by a specific tool.
 - The script **4_feature_frequence.py** calculates the frequency at which each feature is selected by the different tools.
@@ -106,7 +106,7 @@ $ python ./Benchmark/ExternalValid.py
  We developed Meta-iTL, an instance-based transfer learning (TL) modeling strategy. By leveraging knowledge transfer between samples to be tested (i.e., target domain) and existing data repository (i.e., source domain), Meta-iTL overcomes challenges limited by the cohort-specific effects and scarcity of ADA cases for training, improving cross-cohort applicability of data models. In summary, our study provides a reproducible bioinformatics framework for cross-cohort CRC and ADA detection. This approach advances the development and application of non-invasive early screening, offering significant potential for improving early diagnosis and prevention of CRC.
 ####  *Subset selection and matching by a mutual nearest neighbor set algorithm*
 ```python
-python ./Meta_iTL/script/01_findMNN.py -t CHN_SH-CRC-4 -r S0.3
+$ python ./Meta_iTL/script/01_findMNN.py -t CHN_SH-CRC-4 -r S0.3
 ```
 	-t: Specifies the name of the target study. 
 	-r: Defines the percentage of target domain samples selected for transfer learning. 
