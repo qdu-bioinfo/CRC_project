@@ -145,11 +145,11 @@ for (class_dir in c("genus","species","t_sgb")) {
     for (data_type in c("Raw", "Raw_log", "Batch")) {
       # Set memory limit for processing
       memory.limit(size = 13000)
-      significance_threshold <- 0.001
+      significance_threshold <- 0.01
       
       # Load metadata
       meta.all <- read.csv(
-        file = file.path(data_script_dir, "metaA_all.csv"),
+        file = file.path(data_script_dir, "meta.csv"),
         sep = ',', stringsAsFactors = FALSE, header = TRUE, check.names = FALSE
       )
       rownames(meta.all) <- meta.all$Sample_ID
@@ -186,7 +186,7 @@ for (class_dir in c("genus","species","t_sgb")) {
       feature <- read.csv(
         file = file.path(feature_script_dir, class_dir, data_type, groups, "All_features_tools/Maaslin2/",groups,"/all_results.tsv"),
         sep = '\t')
-      filtered_features <- feature[feature[["qval"]] <= significance_threshold, ]
+      filtered_features <- feature[feature[["pval"]] <= significance_threshold, ]
     
       selected_row_names <-filtered_features$feature
       common_rows1 <- intersect(selected_row_names, rownames(feat.all))
