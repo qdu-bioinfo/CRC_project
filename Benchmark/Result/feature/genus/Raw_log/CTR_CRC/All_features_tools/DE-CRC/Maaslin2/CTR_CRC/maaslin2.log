@@ -1,0 +1,389 @@
+2024-12-25 20:32:19 INFO::Writing function arguments to log file
+2024-12-25 20:32:19 DEBUG::Function arguments
+2024-12-25 20:32:19 DEBUG::Output folder: G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC
+2024-12-25 20:32:19 DEBUG::Min Abundance: 0.000000
+2024-12-25 20:32:19 DEBUG::Min Prevalence: 0.100000
+2024-12-25 20:32:19 DEBUG::Normalization: TSS
+2024-12-25 20:32:19 DEBUG::Transform: NONE
+2024-12-25 20:32:19 DEBUG::Analysis method: LM
+2024-12-25 20:32:19 DEBUG::Max significance: 0.250000
+2024-12-25 20:32:19 DEBUG::Random effects:
+2024-12-25 20:32:19 DEBUG::Fixed effects: Group
+2024-12-25 20:32:19 DEBUG::Correction method: BH
+2024-12-25 20:32:19 DEBUG::Standardize: TRUE
+2024-12-25 20:32:19 DEBUG::Cores: 1
+2024-12-25 20:32:19 INFO::Verifying options selected are valid
+2024-12-25 20:32:19 INFO::Determining format of input files
+2024-12-25 20:32:19 INFO::Input format is data samples as columns and metadata samples as rows
+2024-12-25 20:32:19 DEBUG::Transformed data so samples are rows
+2024-12-25 20:32:19 DEBUG::A total of 72 samples were found in both the data and metadata
+2024-12-25 20:32:19 DEBUG::Reordering data/metadata to use same sample ordering
+2024-12-25 20:32:19 INFO::Formula for fixed effects: expr ~  Group
+2024-12-25 20:32:19 INFO::Filter data based on min abundance and min prevalence
+2024-12-25 20:32:19 INFO::Total samples in data: 72
+2024-12-25 20:32:19 INFO::Min samples required with min abundance for a feature not to be filtered: 7.200000
+2024-12-25 20:32:19 INFO::Total filtered features: 27
+2024-12-25 20:32:19 INFO::Filtered feature names from abundance and prevalence filtering: GGB4456, GGB41458, Negativibacillus, Intestinibacillus, GGB3463, Anaerofustis, GGB9593, Dielma, Raoultibacter, GGB51510, Lactonifactor, GGB58233, Campylobacter, Acidaminococcus, Megasphaera, GGB9813, Enterobacter, GGB42994, Oribacterium, Longicatena, Megamonas, GGB9480, Mitsuokella, GGB3817, Faecalimonas, GGB55957, Mesosutterella
+2024-12-25 20:32:19 INFO::Total filtered features with variance filtering: 0
+2024-12-25 20:32:19 INFO::Filtered feature names from variance filtering:
+2024-12-25 20:32:19 INFO::Running selected normalization method: TSS
+2024-12-25 20:32:19 INFO::Applying z-score to standardize continuous metadata
+2024-12-25 20:32:19 INFO::Running selected transform method: NONE
+2024-12-25 20:32:19 INFO::Running selected analysis method: LM
+2024-12-25 20:32:20 INFO::Fitting model to feature number 1, Ruminococcus
+2024-12-25 20:32:20 INFO::Fitting model to feature number 2, GGB4567
+2024-12-25 20:32:20 INFO::Fitting model to feature number 3, Coprococcus
+2024-12-25 20:32:20 INFO::Fitting model to feature number 4, Bacteroides
+2024-12-25 20:32:20 INFO::Fitting model to feature number 5, Dialister
+2024-12-25 20:32:20 INFO::Fitting model to feature number 6, Lachnospiraceae_unclassified
+2024-12-25 20:32:20 INFO::Fitting model to feature number 7, Phocaeicola
+2024-12-25 20:32:20 INFO::Fitting model to feature number 8, Prevotella
+2024-12-25 20:32:20 INFO::Fitting model to feature number 9, Clostridium
+2024-12-25 20:32:20 INFO::Fitting model to feature number 10, GGB3619
+2024-12-25 20:32:20 INFO::Fitting model to feature number 11, Citrobacter
+2024-12-25 20:32:20 INFO::Fitting model to feature number 12, GGB4684
+2024-12-25 20:32:20 INFO::Fitting model to feature number 13, Roseburia
+2024-12-25 20:32:20 INFO::Fitting model to feature number 14, Mediterraneibacter
+2024-12-25 20:32:20 INFO::Fitting model to feature number 15, Akkermansia
+2024-12-25 20:32:20 INFO::Fitting model to feature number 16, Alistipes
+2024-12-25 20:32:20 INFO::Fitting model to feature number 17, GGB3277
+2024-12-25 20:32:20 INFO::Fitting model to feature number 18, Enterocloster
+2024-12-25 20:32:20 INFO::Fitting model to feature number 19, Blautia
+2024-12-25 20:32:20 INFO::Fitting model to feature number 20, Corynebacterium
+2024-12-25 20:32:20 INFO::Fitting model to feature number 21, GGB9758
+2024-12-25 20:32:20 INFO::Fitting model to feature number 22, Dorea
+2024-12-25 20:32:20 INFO::Fitting model to feature number 23, Lachnospira
+2024-12-25 20:32:20 INFO::Fitting model to feature number 24, Parabacteroides
+2024-12-25 20:32:20 INFO::Fitting model to feature number 25, GGB3256
+2024-12-25 20:32:20 INFO::Fitting model to feature number 26, Paraprevotella
+2024-12-25 20:32:20 INFO::Fitting model to feature number 27, GGB9345
+2024-12-25 20:32:20 INFO::Fitting model to feature number 28, Odoribacter
+2024-12-25 20:32:20 INFO::Fitting model to feature number 29, Faecalibacterium
+2024-12-25 20:32:20 INFO::Fitting model to feature number 30, Clostridiaceae_unclassified
+2024-12-25 20:32:20 INFO::Fitting model to feature number 31, Barnesiella
+2024-12-25 20:32:20 INFO::Fitting model to feature number 32, GGB3746
+2024-12-25 20:32:20 INFO::Fitting model to feature number 33, Desulfovibrio
+2024-12-25 20:32:20 INFO::Fitting model to feature number 34, Intestinibacter
+2024-12-25 20:32:20 INFO::Fitting model to feature number 35, Firmicutes_unclassified
+2024-12-25 20:32:20 INFO::Fitting model to feature number 36, GGB9342
+2024-12-25 20:32:20 INFO::Fitting model to feature number 37, GGB9581
+2024-12-25 20:32:20 INFO::Fitting model to feature number 38, GGB9359
+2024-12-25 20:32:20 INFO::Fitting model to feature number 39, Veillonella
+2024-12-25 20:32:20 INFO::Fitting model to feature number 40, GGB9636
+2024-12-25 20:32:21 INFO::Fitting model to feature number 41, Oscillospiraceae_unclassified
+2024-12-25 20:32:21 INFO::Fitting model to feature number 42, Faecalibacillus
+2024-12-25 20:32:21 INFO::Fitting model to feature number 43, Streptococcus
+2024-12-25 20:32:21 INFO::Fitting model to feature number 44, GGB3612
+2024-12-25 20:32:21 INFO::Fitting model to feature number 45, Eubacteriaceae_unclassified
+2024-12-25 20:32:21 INFO::Fitting model to feature number 46, Candidatus_Gastranaerophilales_unclassified
+2024-12-25 20:32:21 INFO::Fitting model to feature number 47, Staphylococcus
+2024-12-25 20:32:21 INFO::Fitting model to feature number 48, GGB51269
+2024-12-25 20:32:21 INFO::Fitting model to feature number 49, GGB3653
+2024-12-25 20:32:21 INFO::Fitting model to feature number 50, GGB3614
+2024-12-25 20:32:21 INFO::Fitting model to feature number 51, Phascolarctobacterium
+2024-12-25 20:32:21 INFO::Fitting model to feature number 52, Faecalicatena
+2024-12-25 20:32:21 INFO::Fitting model to feature number 53, GGB4605
+2024-12-25 20:32:21 INFO::Fitting model to feature number 54, GGB9296
+2024-12-25 20:32:21 INFO::Fitting model to feature number 55, GGB2998
+2024-12-25 20:32:21 INFO::Fitting model to feature number 56, Coprobacter
+2024-12-25 20:32:21 INFO::Fitting model to feature number 57, Butyricimonas
+2024-12-25 20:32:21 INFO::Fitting model to feature number 58, Escherichia
+2024-12-25 20:32:21 INFO::Fitting model to feature number 59, Eubacteriales_unclassified
+2024-12-25 20:32:21 INFO::Fitting model to feature number 60, GGB9747
+2024-12-25 20:32:21 INFO::Fitting model to feature number 61, Collinsella
+2024-12-25 20:32:21 INFO::Fitting model to feature number 62, GGB9512
+2024-12-25 20:32:21 INFO::Fitting model to feature number 63, Candidatus_Cibionibacter
+2024-12-25 20:32:21 INFO::Fitting model to feature number 64, Faecalitalea
+2024-12-25 20:32:21 INFO::Fitting model to feature number 65, GGB9635
+2024-12-25 20:32:21 INFO::Fitting model to feature number 66, Anaerostipes
+2024-12-25 20:32:21 INFO::Fitting model to feature number 67, Fusicatenibacter
+2024-12-25 20:32:21 INFO::Fitting model to feature number 68, Anaerobutyricum
+2024-12-25 20:32:21 INFO::Fitting model to feature number 69, Parasutterella
+2024-12-25 20:32:21 INFO::Fitting model to feature number 70, GGB3345
+2024-12-25 20:32:21 INFO::Fitting model to feature number 71, Lacrimispora
+2024-12-25 20:32:21 INFO::Fitting model to feature number 72, Haemophilus
+2024-12-25 20:32:21 INFO::Fitting model to feature number 73, GGB2958
+2024-12-25 20:32:21 INFO::Fitting model to feature number 74, GGB3815
+2024-12-25 20:32:21 INFO::Fitting model to feature number 75, GGB35068
+2024-12-25 20:32:21 INFO::Fitting model to feature number 76, GGB9712
+2024-12-25 20:32:21 INFO::Fitting model to feature number 77, GGB36267
+2024-12-25 20:32:21 INFO::Fitting model to feature number 78, GGB2970
+2024-12-25 20:32:22 INFO::Fitting model to feature number 79, Dysosmobacter
+2024-12-25 20:32:22 INFO::Fitting model to feature number 80, GGB9677
+2024-12-25 20:32:22 INFO::Fitting model to feature number 81, Butyricicoccus
+2024-12-25 20:32:22 INFO::Fitting model to feature number 82, GGB2982
+2024-12-25 20:32:22 INFO::Fitting model to feature number 83, Bifidobacterium
+2024-12-25 20:32:22 INFO::Fitting model to feature number 84, Catenibacterium
+2024-12-25 20:32:22 INFO::Fitting model to feature number 85, GGB9634
+2024-12-25 20:32:22 INFO::Fitting model to feature number 86, GGB3321
+2024-12-25 20:32:22 INFO::Fitting model to feature number 87, GGB9602
+2024-12-25 20:32:22 INFO::Fitting model to feature number 88, GGB80011
+2024-12-25 20:32:22 INFO::Fitting model to feature number 89, GGB9767
+2024-12-25 20:32:22 INFO::Fitting model to feature number 90, GGB2653
+2024-12-25 20:32:22 INFO::Fitting model to feature number 91, GGB9708
+2024-12-25 20:32:22 INFO::Fitting model to feature number 92, GGB14025
+2024-12-25 20:32:22 INFO::Fitting model to feature number 93, GGB3061
+2024-12-25 20:32:22 INFO::Fitting model to feature number 94, Agathobaculum
+2024-12-25 20:32:22 INFO::Fitting model to feature number 95, GGB80140
+2024-12-25 20:32:22 INFO::Fitting model to feature number 96, GGB33469
+2024-12-25 20:32:22 INFO::Fitting model to feature number 97, Turicibacter
+2024-12-25 20:32:22 INFO::Fitting model to feature number 98, GGB9559
+2024-12-25 20:32:22 INFO::Fitting model to feature number 99, GGB79734
+2024-12-25 20:32:22 INFO::Fitting model to feature number 100, Hydrogenoanaerobacterium
+2024-12-25 20:32:22 INFO::Fitting model to feature number 101, Oscillibacter
+2024-12-25 20:32:22 INFO::Fitting model to feature number 102, Eubacteriales_Family_XIII_Incertae_Sedis_unclassified
+2024-12-25 20:32:22 INFO::Fitting model to feature number 103, GGB9713
+2024-12-25 20:32:22 INFO::Fitting model to feature number 104, Klebsiella
+2024-12-25 20:32:22 INFO::Fitting model to feature number 105, Lactococcus
+2024-12-25 20:32:22 INFO::Fitting model to feature number 106, GGB58485
+2024-12-25 20:32:22 INFO::Fitting model to feature number 107, Waltera
+2024-12-25 20:32:22 INFO::Fitting model to feature number 108, Bilophila
+2024-12-25 20:32:22 INFO::Fitting model to feature number 109, GGB3033
+2024-12-25 20:32:22 INFO::Fitting model to feature number 110, Anaerococcus
+2024-12-25 20:32:22 INFO::Fitting model to feature number 111, GGB9640
+2024-12-25 20:32:22 INFO::Fitting model to feature number 112, Coprobacillus
+2024-12-25 20:32:23 INFO::Fitting model to feature number 113, GGB34228
+2024-12-25 20:32:23 INFO::Fitting model to feature number 114, GGB9699
+2024-12-25 20:32:23 INFO::Fitting model to feature number 115, GGB3109
+2024-12-25 20:32:23 INFO::Fitting model to feature number 116, Sutterella
+2024-12-25 20:32:23 INFO::Fitting model to feature number 117, GGB3570
+2024-12-25 20:32:23 INFO::Fitting model to feature number 118, Anaerosacchariphilus
+2024-12-25 20:32:23 INFO::Fitting model to feature number 119, GGB9444
+2024-12-25 20:32:23 INFO::Fitting model to feature number 120, GGB9293
+2024-12-25 20:32:23 INFO::Fitting model to feature number 121, GGB9788
+2024-12-25 20:32:23 INFO::Fitting model to feature number 122, GGB9707
+2024-12-25 20:32:23 INFO::Fitting model to feature number 123, GGB3588
+2024-12-25 20:32:23 INFO::Fitting model to feature number 124, GGB9608
+2024-12-25 20:32:23 INFO::Fitting model to feature number 125, GGB9760
+2024-12-25 20:32:23 INFO::Fitting model to feature number 126, GGB2848
+2024-12-25 20:32:23 INFO::Fitting model to feature number 127, GGB51441
+2024-12-25 20:32:23 INFO::Fitting model to feature number 128, GGB9790
+2024-12-25 20:32:23 INFO::Fitting model to feature number 129, Candidatus_Pararuminococcus
+2024-12-25 20:32:23 INFO::Fitting model to feature number 130, GGB3491
+2024-12-25 20:32:23 INFO::Fitting model to feature number 131, Anaerotruncus
+2024-12-25 20:32:23 INFO::Fitting model to feature number 132, GGB6612
+2024-12-25 20:32:23 INFO::Fitting model to feature number 133, Gemmiger
+2024-12-25 20:32:23 INFO::Fitting model to feature number 134, Holdemanella
+2024-12-25 20:32:23 INFO::Fitting model to feature number 135, Anaerotignum
+2024-12-25 20:32:23 INFO::Fitting model to feature number 136, GGB13493
+2024-12-25 20:32:23 INFO::Fitting model to feature number 137, GGB9642
+2024-12-25 20:32:23 INFO::Fitting model to feature number 138, GGB9691
+2024-12-25 20:32:23 INFO::Fitting model to feature number 139, Senegalimassilia
+2024-12-25 20:32:23 INFO::Fitting model to feature number 140, Erysipelotrichaceae_unclassified
+2024-12-25 20:32:23 INFO::Fitting model to feature number 141, GGB34797
+2024-12-25 20:32:23 INFO::Fitting model to feature number 142, GGB9759
+2024-12-25 20:32:23 INFO::Fitting model to feature number 143, Ellagibacter
+2024-12-25 20:32:23 INFO::Fitting model to feature number 144, GGB9616
+2024-12-25 20:32:23 INFO::Fitting model to feature number 145, GGB2983
+2024-12-25 20:32:23 INFO::Fitting model to feature number 146, GGB33928
+2024-12-25 20:32:23 INFO::Fitting model to feature number 147, GGB9766
+2024-12-25 20:32:24 INFO::Fitting model to feature number 148, Enterococcus
+2024-12-25 20:32:24 INFO::Fitting model to feature number 149, Slackia
+2024-12-25 20:32:24 INFO::Fitting model to feature number 150, GGB9627
+2024-12-25 20:32:24 INFO::Fitting model to feature number 151, Paratractidigestivibacter
+2024-12-25 20:32:24 INFO::Fitting model to feature number 152, GGB9614
+2024-12-25 20:32:24 INFO::Fitting model to feature number 153, Rheinheimera
+2024-12-25 20:32:24 INFO::Fitting model to feature number 154, Vescimonas
+2024-12-25 20:32:24 INFO::Fitting model to feature number 155, Ligilactobacillus
+2024-12-25 20:32:24 INFO::Fitting model to feature number 156, Flavonifractor
+2024-12-25 20:32:24 INFO::Fitting model to feature number 157, GGB2977
+2024-12-25 20:32:24 INFO::Fitting model to feature number 158, Hydrogeniiclostidium
+2024-12-25 20:32:24 INFO::Fitting model to feature number 159, GGB13404
+2024-12-25 20:32:24 INFO::Fitting model to feature number 160, Actinomyces
+2024-12-25 20:32:24 INFO::Fitting model to feature number 161, GGB9618
+2024-12-25 20:32:24 INFO::Fitting model to feature number 162, Solobacterium
+2024-12-25 20:32:24 INFO::Fitting model to feature number 163, Rothia
+2024-12-25 20:32:24 INFO::Fitting model to feature number 164, Eggerthella
+2024-12-25 20:32:24 INFO::Fitting model to feature number 165, GGB9062
+2024-12-25 20:32:24 INFO::Fitting model to feature number 166, GGB1627
+2024-12-25 20:32:24 INFO::Fitting model to feature number 167, Pseudoruminococcus
+2024-12-25 20:32:24 INFO::Fitting model to feature number 168, GGB51647
+2024-12-25 20:32:24 INFO::Fitting model to feature number 169, Mogibacterium
+2024-12-25 20:32:24 INFO::Fitting model to feature number 170, Lawsonibacter
+2024-12-25 20:32:24 INFO::Fitting model to feature number 171, GGB9621
+2024-12-25 20:32:24 INFO::Fitting model to feature number 172, GGB3677
+2024-12-25 20:32:24 INFO::Fitting model to feature number 173, GGB79770
+2024-12-25 20:32:24 INFO::Fitting model to feature number 174, Intestinimonas
+2024-12-25 20:32:24 INFO::Fitting model to feature number 175, Lancefieldella
+2024-12-25 20:32:24 INFO::Fitting model to feature number 176, GGB9770
+2024-12-25 20:32:24 INFO::Fitting model to feature number 177, Hungatella
+2024-12-25 20:32:24 INFO::Fitting model to feature number 178, Holdemania
+2024-12-25 20:32:24 INFO::Fitting model to feature number 179, GGB3000
+2024-12-25 20:32:24 INFO::Fitting model to feature number 180, GGB9189
+2024-12-25 20:32:24 INFO::Fitting model to feature number 181, Candidatus_Woodwardibium
+2024-12-25 20:32:24 INFO::Fitting model to feature number 182, GGB9646
+2024-12-25 20:32:24 INFO::Fitting model to feature number 183, GGB9619
+2024-12-25 20:32:25 INFO::Fitting model to feature number 184, GGB9524
+2024-12-25 20:32:25 INFO::Fitting model to feature number 185, Massiliimalia
+2024-12-25 20:32:25 INFO::Fitting model to feature number 186, GGB12785
+2024-12-25 20:32:25 INFO::Fitting model to feature number 187, GGB9534
+2024-12-25 20:32:25 INFO::Fitting model to feature number 188, Ruthenibacterium
+2024-12-25 20:32:25 INFO::Fitting model to feature number 189, Gemella
+2024-12-25 20:32:25 INFO::Fitting model to feature number 190, GGB2987
+2024-12-25 20:32:25 INFO::Fitting model to feature number 191, Candidatus_Saccharibacteria_unclassified
+2024-12-25 20:32:25 INFO::Fitting model to feature number 192, Parvimonas
+2024-12-25 20:32:25 INFO::Fitting model to feature number 193, Victivallis
+2024-12-25 20:32:25 INFO::Fitting model to feature number 194, Lachnoclostridium
+2024-12-25 20:32:25 INFO::Fitting model to feature number 195, GGB16040
+2024-12-25 20:32:25 INFO::Fitting model to feature number 196, GGB34900
+2024-12-25 20:32:25 INFO::Fitting model to feature number 197, Allisonella
+2024-12-25 20:32:25 INFO::Fitting model to feature number 198, GGB3534
+2024-12-25 20:32:25 INFO::Fitting model to feature number 199, GGB3828
+2024-12-25 20:32:25 INFO::Fitting model to feature number 200, GGB9694
+2024-12-25 20:32:25 INFO::Fitting model to feature number 201, GGB9302
+2024-12-25 20:32:25 INFO::Fitting model to feature number 202, Candidatus_Allochristensenella
+2024-12-25 20:32:25 INFO::Fitting model to feature number 203, GGB47687
+2024-12-25 20:32:25 INFO::Fitting model to feature number 204, GGB52130
+2024-12-25 20:32:25 INFO::Fitting model to feature number 205, GGB9237
+2024-12-25 20:32:25 INFO::Fitting model to feature number 206, GGB9765
+2024-12-25 20:32:25 INFO::Fitting model to feature number 207, GGB58158
+2024-12-25 20:32:25 INFO::Fitting model to feature number 208, Candidatus_Metaruminococcus
+2024-12-25 20:32:25 INFO::Fitting model to feature number 209, Candidatus_Geddesella
+2024-12-25 20:32:25 INFO::Fitting model to feature number 210, Christensenellaceae_unclassified
+2024-12-25 20:32:25 INFO::Fitting model to feature number 211, Angelakisella
+2024-12-25 20:32:25 INFO::Fitting model to feature number 212, Eisenbergiella
+2024-12-25 20:32:25 INFO::Fitting model to feature number 213, Peptostreptococcus
+2024-12-25 20:32:25 INFO::Fitting model to feature number 214, Granulicatella
+2024-12-25 20:32:25 INFO::Fitting model to feature number 215, Candidatus_Nanosynsacchari
+2024-12-25 20:32:25 INFO::Fitting model to feature number 216, GGB3537
+2024-12-25 20:32:26 INFO::Fitting model to feature number 217, Massilioclostridium
+2024-12-25 20:32:26 INFO::Fitting model to feature number 218, GGB9719
+2024-12-25 20:32:26 INFO::Fitting model to feature number 219, Lachnotalea
+2024-12-25 20:32:26 INFO::Fitting model to feature number 220, Pseudoflavonifractor
+2024-12-25 20:32:26 INFO::Fitting model to feature number 221, GGB9787
+2024-12-25 20:32:26 INFO::Fitting model to feature number 222, GGB9641
+2024-12-25 20:32:26 INFO::Fitting model to feature number 223, GGB74463
+2024-12-25 20:32:26 INFO::Fitting model to feature number 224, GGB9786
+2024-12-25 20:32:26 INFO::Fitting model to feature number 225, GGB9781
+2024-12-25 20:32:26 INFO::Fitting model to feature number 226, GGB33586
+2024-12-25 20:32:26 INFO::Fitting model to feature number 227, GGB2980
+2024-12-25 20:32:26 INFO::Fitting model to feature number 228, Erysipelatoclostridium
+2024-12-25 20:32:26 INFO::Fitting model to feature number 229, GGB77437
+2024-12-25 20:32:26 INFO::Fitting model to feature number 230, Massilimicrobiota
+2024-12-25 20:32:26 INFO::Fitting model to feature number 231, Christensenella
+2024-12-25 20:32:26 INFO::Fitting model to feature number 232, GGB9453
+2024-12-25 20:32:26 INFO::Fitting model to feature number 233, Anaeromassilibacillus
+2024-12-25 20:32:26 INFO::Fitting model to feature number 234, Bittarella
+2024-12-25 20:32:26 INFO::Fitting model to feature number 235, GGB9537
+2024-12-25 20:32:26 INFO::Fitting model to feature number 236, GGB3175
+2024-12-25 20:32:26 INFO::Fitting model to feature number 237, GGB4566
+2024-12-25 20:32:26 INFO::Fitting model to feature number 238, Adlercreutzia
+2024-12-25 20:32:26 INFO::Fitting model to feature number 239, GGB9063
+2024-12-25 20:32:26 INFO::Fitting model to feature number 240, GGB51884
+2024-12-25 20:32:26 INFO::Fitting model to feature number 241, GGB6518
+2024-12-25 20:32:26 INFO::Fitting model to feature number 242, Gordonibacter
+2024-12-25 20:32:26 INFO::Fitting model to feature number 243, GGB9545
+2024-12-25 20:32:26 INFO::Fitting model to feature number 244, Evtepia
+2024-12-25 20:32:26 INFO::Fitting model to feature number 245, GGB3005
+2024-12-25 20:32:26 INFO::Fitting model to feature number 246, GGB9522
+2024-12-25 20:32:26 INFO::Fitting model to feature number 247, Methylobacterium
+2024-12-25 20:32:26 INFO::Fitting model to feature number 248, GGB52106
+2024-12-25 20:32:26 INFO::Fitting model to feature number 249, Harryflintia
+2024-12-25 20:32:26 INFO::Fitting model to feature number 250, Clostridia_unclassified
+2024-12-25 20:32:26 INFO::Fitting model to feature number 251, GGB45432
+2024-12-25 20:32:26 INFO::Fitting model to feature number 252, GGB9818
+2024-12-25 20:32:26 INFO::Fitting model to feature number 253, Phocea
+2024-12-25 20:32:26 INFO::Fitting model to feature number 254, GGB42389
+2024-12-25 20:32:27 INFO::Fitting model to feature number 255, Candidatus_Pseudoruminococcus
+2024-12-25 20:32:27 INFO::Fitting model to feature number 256, Olsenella
+2024-12-25 20:32:27 INFO::Fitting model to feature number 257, Anaerofilum
+2024-12-25 20:32:27 INFO::Fitting model to feature number 258, Lactobacillus
+2024-12-25 20:32:27 INFO::Fitting model to feature number 259, Neobittarella
+2024-12-25 20:32:27 INFO::Fitting model to feature number 260, GGB1495
+2024-12-25 20:32:27 INFO::Fitting model to feature number 261, GGB3819
+2024-12-25 20:32:27 INFO::Fitting model to feature number 262, GGB3730
+2024-12-25 20:32:27 INFO::Fitting model to feature number 263, Tyzzerella
+2024-12-25 20:32:27 INFO::Fitting model to feature number 264, GGB9176
+2024-12-25 20:32:27 INFO::Fitting model to feature number 265, GGB3363
+2024-12-25 20:32:27 INFO::Fitting model to feature number 266, GGB79973
+2024-12-25 20:32:27 INFO::Fitting model to feature number 267, GGB9775
+2024-12-25 20:32:27 INFO::Fitting model to feature number 268, Sanguibacter
+2024-12-25 20:32:27 INFO::Fitting model to feature number 269, Candidatus_Borkfalkia
+2024-12-25 20:32:27 INFO::Fitting model to feature number 270, Candidatus_Avimonas
+2024-12-25 20:32:27 INFO::Fitting model to feature number 271, GGB33512
+2024-12-25 20:32:27 INFO::Fitting model to feature number 272, GGB9724
+2024-12-25 20:32:27 INFO::Fitting model to feature number 273, GGB9531
+2024-12-25 20:32:27 INFO::Fitting model to feature number 274, GGB9611
+2024-12-25 20:32:27 INFO::Fitting model to feature number 275, Candidatus_Parachristensenella
+2024-12-25 20:32:27 INFO::Fitting model to feature number 276, GGB3444
+2024-12-25 20:32:27 INFO::Fitting model to feature number 277, GGB38744
+2024-12-25 20:32:27 INFO::Fitting model to feature number 278, Fusobacterium
+2024-12-25 20:32:27 INFO::Fitting model to feature number 279, GGB9561
+2024-12-25 20:32:27 INFO::Fitting model to feature number 280, GGB9782
+2024-12-25 20:32:27 INFO::Fitting model to feature number 281, Candidatus_Pseudobutyricicoccus
+2024-12-25 20:32:27 INFO::Fitting model to feature number 282, GGB3626
+2024-12-25 20:32:27 INFO::Fitting model to feature number 283, Limosilactobacillus
+2024-12-25 20:32:27 INFO::Fitting model to feature number 284, Massilistercora
+2024-12-25 20:32:27 INFO::Fitting model to feature number 285, Sellimonas
+2024-12-25 20:32:27 INFO::Fitting model to feature number 286, Candidatus_Schneewindia
+2024-12-25 20:32:27 INFO::Fitting model to feature number 287, GGB45491
+2024-12-25 20:32:27 INFO::Fitting model to feature number 288, GGB9501
+2024-12-25 20:32:27 INFO::Fitting model to feature number 289, Merdimonas
+2024-12-25 20:32:27 INFO::Fitting model to feature number 290, GGB9186
+2024-12-25 20:32:27 INFO::Fitting model to feature number 291, Solibaculum
+2024-12-25 20:32:27 INFO::Fitting model to feature number 292, GGB3034
+2024-12-25 20:32:27 INFO::Fitting model to feature number 293, Monoglobus
+2024-12-25 20:32:28 INFO::Fitting model to feature number 294, Catenibacillus
+2024-12-25 20:32:28 INFO::Fitting model to feature number 295, GGB9469
+2024-12-25 20:32:28 INFO::Fitting model to feature number 296, GGB9697
+2024-12-25 20:32:28 INFO::Fitting model to feature number 297, GGB3510
+2024-12-25 20:32:28 INFO::Fitting model to feature number 298, GGB51959
+2024-12-25 20:32:28 INFO::Fitting model to feature number 299, Schaalia
+2024-12-25 20:32:28 INFO::Fitting model to feature number 300, GGB9661
+2024-12-25 20:32:28 INFO::Fitting model to feature number 301, GGB1266
+2024-12-25 20:32:28 INFO::Fitting model to feature number 302, GGB1420
+2024-12-25 20:32:28 INFO::Fitting model to feature number 303, Cloacibacillus
+2024-12-25 20:32:28 INFO::Fitting model to feature number 304, Porphyromonas
+2024-12-25 20:32:28 INFO::Counting total values for each feature
+2024-12-25 20:32:28 WARNING::Deleting existing residuals file: G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC/residuals.rds
+2024-12-25 20:32:28 INFO::Writing residuals to file G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC/residuals.rds
+2024-12-25 20:32:28 WARNING::Deleting existing fitted file: G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC/fitted.rds
+2024-12-25 20:32:28 INFO::Writing fitted values to file G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC/fitted.rds
+2024-12-25 20:32:28 INFO::Writing all results to file (ordered by increasing q-values): G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC/all_results.tsv
+2024-12-25 20:32:28 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC/significant_results.tsv
+2024-12-25 20:32:28 INFO::Writing heatmap of significant results to file: G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC/heatmap.pdf
+2024-12-25 20:32:28 INFO::Writing association plots (one for each significant association) to output folder: G:/deeplearning/CRC/benchmarker/genus/Result/feature_selection/new3/Raw_log/All_features_tools/DE-CRC/Maaslin2/CTR_CRC
+2024-12-25 20:32:28 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-12-25 20:32:28 INFO::Plotting data for metadata number 1, Group
+2024-12-25 20:32:28 INFO::Creating boxplot for categorical data, Group vs Clostridium
+2024-12-25 20:32:29 INFO::Creating boxplot for categorical data, Group vs Rothia
+2024-12-25 20:32:29 INFO::Creating boxplot for categorical data, Group vs GGB9770
+2024-12-25 20:32:29 INFO::Creating boxplot for categorical data, Group vs Hungatella
+2024-12-25 20:32:29 INFO::Creating boxplot for categorical data, Group vs GGB9176
+2024-12-25 20:32:29 INFO::Creating boxplot for categorical data, Group vs GGB9782
+2024-12-25 20:32:30 INFO::Creating boxplot for categorical data, Group vs GGB9697
+2024-12-25 20:32:30 INFO::Creating boxplot for categorical data, Group vs GGB9342
+2024-12-25 20:32:30 INFO::Creating boxplot for categorical data, Group vs GGB9699
+2024-12-25 20:32:30 INFO::Creating boxplot for categorical data, Group vs Anaerosacchariphilus
+2024-12-25 20:32:30 INFO::Creating boxplot for categorical data, Group vs Candidatus_Woodwardibium
+2024-12-25 20:32:30 INFO::Creating boxplot for categorical data, Group vs Candidatus_Nanosynsacchari
+2024-12-25 20:32:30 INFO::Creating boxplot for categorical data, Group vs GGB9781
+2024-12-25 20:32:31 INFO::Creating boxplot for categorical data, Group vs GGB9531
+2024-12-25 20:32:31 INFO::Creating boxplot for categorical data, Group vs Roseburia
+2024-12-25 20:32:31 INFO::Creating boxplot for categorical data, Group vs Turicibacter
+2024-12-25 20:32:31 INFO::Creating boxplot for categorical data, Group vs Fusobacterium
+2024-12-25 20:32:32 INFO::Creating boxplot for categorical data, Group vs GGB9345
+2024-12-25 20:32:32 INFO::Creating boxplot for categorical data, Group vs Gemella
+2024-12-25 20:32:32 INFO::Creating boxplot for categorical data, Group vs Tyzzerella
+2024-12-25 20:32:32 INFO::Creating boxplot for categorical data, Group vs Merdimonas
+2024-12-25 20:32:32 INFO::Creating boxplot for categorical data, Group vs Cloacibacillus
+2024-12-25 20:32:32 INFO::Creating boxplot for categorical data, Group vs Akkermansia
+2024-12-25 20:32:33 INFO::Creating boxplot for categorical data, Group vs Faecalibacterium
+2024-12-25 20:32:33 INFO::Creating boxplot for categorical data, Group vs Faecalicatena
+2024-12-25 20:32:33 INFO::Creating boxplot for categorical data, Group vs Anaerostipes
+2024-12-25 20:32:33 INFO::Creating boxplot for categorical data, Group vs GGB36267
+2024-12-25 20:32:33 INFO::Creating boxplot for categorical data, Group vs GGB9677
+2024-12-25 20:32:34 INFO::Creating boxplot for categorical data, Group vs Slackia
+2024-12-25 20:32:34 INFO::Creating boxplot for categorical data, Group vs GGB3000
+2024-12-25 20:32:34 INFO::Creating boxplot for categorical data, Group vs Candidatus_Geddesella
+2024-12-25 20:32:34 INFO::Creating boxplot for categorical data, Group vs Christensenellaceae_unclassified
+2024-12-25 20:32:34 INFO::Creating boxplot for categorical data, Group vs GGB3175
+2024-12-25 20:32:34 INFO::Creating boxplot for categorical data, Group vs Harryflintia
+2024-12-25 20:32:35 INFO::Creating boxplot for categorical data, Group vs Clostridia_unclassified
+2024-12-25 20:32:35 INFO::Creating boxplot for categorical data, Group vs Lactobacillus
+2024-12-25 20:32:35 INFO::Creating boxplot for categorical data, Group vs GGB33512
+2024-12-25 20:32:35 INFO::Creating boxplot for categorical data, Group vs Catenibacillus
+2024-12-25 20:32:35 INFO::Creating boxplot for categorical data, Group vs Porphyromonas
+2024-12-25 20:32:35 INFO::Creating boxplot for categorical data, Group vs Mediterraneibacter
+2024-12-25 20:32:36 INFO::Creating boxplot for categorical data, Group vs GGB9694
+2024-12-25 20:32:36 INFO::Creating boxplot for categorical data, Group vs Butyricimonas
