@@ -1,0 +1,717 @@
+2024-12-25 10:23:33 INFO::Writing function arguments to log file
+2024-12-25 10:23:33 DEBUG::Function arguments
+2024-12-25 10:23:33 DEBUG::Output folder: G:/deeplearning/CRC/benchmarker/t_sgb/Result/feature_selection/new3/Batch/All_features_tools/CHN_SH-CRC/Maaslin2/CTR_CRC
+2024-12-25 10:23:33 DEBUG::Min Abundance: 0.000000
+2024-12-25 10:23:33 DEBUG::Min Prevalence: 0.100000
+2024-12-25 10:23:33 DEBUG::Normalization: TSS
+2024-12-25 10:23:33 DEBUG::Transform: NONE
+2024-12-25 10:23:33 DEBUG::Analysis method: LM
+2024-12-25 10:23:33 DEBUG::Max significance: 0.250000
+2024-12-25 10:23:33 DEBUG::Random effects:
+2024-12-25 10:23:33 DEBUG::Fixed effects: Group
+2024-12-25 10:23:33 DEBUG::Correction method: BH
+2024-12-25 10:23:33 DEBUG::Standardize: TRUE
+2024-12-25 10:23:33 DEBUG::Cores: 1
+2024-12-25 10:23:33 INFO::Verifying options selected are valid
+2024-12-25 10:23:33 INFO::Determining format of input files
+2024-12-25 10:23:33 INFO::Input format is data samples as columns and metadata samples as rows
+2024-12-25 10:23:33 DEBUG::Transformed data so samples are rows
+2024-12-25 10:23:33 DEBUG::A total of 160 samples were found in both the data and metadata
+2024-12-25 10:23:33 DEBUG::Reordering data/metadata to use same sample ordering
+2024-12-25 10:23:33 INFO::Formula for fixed effects: expr ~  Group
+2024-12-25 10:23:33 INFO::Filter data based on min abundance and min prevalence
+2024-12-25 10:23:33 INFO::Total samples in data: 160
+2024-12-25 10:23:33 INFO::Min samples required with min abundance for a feature not to be filtered: 16.000000
+2024-12-25 10:23:33 INFO::Total filtered features: 153
+2024-12-25 10:23:33 INFO::Filtered feature names from abundance and prevalence filtering: t__SGB6308, t__SGB4648, t__SGB1860, t__SGB14334, t__SGB15107, t__SGB8601, t__SGB3989, t__SGB6790, t__SGB9340, t__SGB5042, t__SGB3940, t__SGB15196, t__SGB3952, t__SGB4809, t__SGB4547, t__SGB15385, t__SGB14906, t__SGB4063, t__SGB17241, t__SGB4804, t__SGB15224, t__SGB4829, t__SGB7985, t__SGB15256, t__SGB15180, t__SGB4909, t__SGB15115, t__SGB4643, t__SGB9283, t__SGB4436, t__SGB4808, t__SGB15041, t__SGB47656, t__SGB9346, t__SGB6783, t__SGB15119, t__SGB15198, t__SGB14322, t__SGB14816_group, t__SGB14397, t__SGB14773, t__SGB14370, t__SGB3959, t__SGB15315, t__SGB13981, t__SGB4280, t__SGB15085, t__SGB15073, t__SGB4990, t__SGB14854, t__SGB3991, t__SGB14128, t__SGB48424, t__SGB15066, t__SGB4595, t__SGB3969, t__SGB4701, t__SGB9347, t__SGB14891, t__SGB4722, t__SGB15204, t__SGB14263, t__SGB15390, t__SGB15322, t__SGB2286, t__SGB4621, t__SGB15382, t__SGB79798, t__SGB4774, t__SGB14262, t__SGB15237, t__SGB29321, t__SGB29302, t__SGB4045, t__SGB4727, t__SGB4775, t__SGB29305, t__SGB15326, t__SGB15140, t__SGB15117, t__SGB54347, t__SGB49059, t__SGB15402, t__SGB3962, t__SGB6768, t__SGB9203, t__SGB4824, t__SGB14940, t__SGB7258, t__SGB6305, t__SGB13982, t__SGB13983, t__SGB15164, t__SGB72838, t__SGB15273, t__SGB63353, t__SGB63101, t__SGB15459, t__SGB14797, t__SGB48013, t__SGB4677, t__SGB29433, t__SGB59559, t__SGB71394, t__SGB5184, t__SGB14114, t__SGB5736, t__SGB4553_group, t__SGB15090, t__SGB1948, t__SGB15395, t__SGB14027, t__SGB15278, t__SGB15045, t__SGB23477, t__SGB15203, t__SGB58519, t__SGB4594, t__SGB15103, t__SGB14842, t__SGB15149, t__SGB6747, t__SGB15403, t__SGB15065, t__SGB14975, t__SGB4905, t__SGB14844, t__SGB4029, t__SGB63163, t__SGB2311, t__SGB66170, t__SGB4626, t__SGB14125, t__SGB7259, t__SGB4041, t__SGB6767, t__SGB14895, t__SGB4786, t__SGB4030, t__SGB4529, t__SGB59869, t__SGB15201, t__SGB15156, t__SGB4687, t__SGB5193, t__SGB15076, t__SGB72479, t__SGB14874, t__SGB14808, t__SGB1699, t__SGB4718, t__SGB1957, t__SGB5182
+2024-12-25 10:23:33 INFO::Total filtered features with variance filtering: 0
+2024-12-25 10:23:33 INFO::Filtered feature names from variance filtering:
+2024-12-25 10:23:33 INFO::Running selected normalization method: TSS
+2024-12-25 10:23:33 INFO::Applying z-score to standardize continuous metadata
+2024-12-25 10:23:33 INFO::Running selected transform method: NONE
+2024-12-25 10:23:33 INFO::Running selected analysis method: LM
+2024-12-25 10:23:33 INFO::Fitting model to feature number 1, t__SGB4285
+2024-12-25 10:23:33 INFO::Fitting model to feature number 2, t__SGB5121
+2024-12-25 10:23:33 INFO::Fitting model to feature number 3, t__SGB5825_group
+2024-12-25 10:23:33 INFO::Fitting model to feature number 4, t__SGB4933
+2024-12-25 10:23:33 INFO::Fitting model to feature number 5, t__SGB1814
+2024-12-25 10:23:33 INFO::Fitting model to feature number 6, t__SGB1836
+2024-12-25 10:23:33 INFO::Fitting model to feature number 7, t__SGB4894
+2024-12-25 10:23:33 INFO::Fitting model to feature number 8, t__SGB1844
+2024-12-25 10:23:33 INFO::Fitting model to feature number 9, t__SGB1812
+2024-12-25 10:23:33 INFO::Fitting model to feature number 10, t__SGB6478
+2024-12-25 10:23:34 INFO::Fitting model to feature number 11, t__SGB5111
+2024-12-25 10:23:34 INFO::Fitting model to feature number 12, t__SGB9226
+2024-12-25 10:23:34 INFO::Fitting model to feature number 13, t__SGB4327
+2024-12-25 10:23:34 INFO::Fitting model to feature number 14, t__SGB2318
+2024-12-25 10:23:34 INFO::Fitting model to feature number 15, t__SGB14313
+2024-12-25 10:23:34 INFO::Fitting model to feature number 16, t__SGB15368
+2024-12-25 10:23:34 INFO::Fitting model to feature number 17, t__SGB4940
+2024-12-25 10:23:34 INFO::Fitting model to feature number 18, t__SGB4557
+2024-12-25 10:23:34 INFO::Fitting model to feature number 19, t__SGB1867
+2024-12-25 10:23:34 INFO::Fitting model to feature number 20, t__SGB4652
+2024-12-25 10:23:34 INFO::Fitting model to feature number 21, t__SGB5087
+2024-12-25 10:23:34 INFO::Fitting model to feature number 22, t__SGB4303
+2024-12-25 10:23:34 INFO::Fitting model to feature number 23, t__SGB1798
+2024-12-25 10:23:34 INFO::Fitting model to feature number 24, t__SGB6276
+2024-12-25 10:23:34 INFO::Fitting model to feature number 25, t__SGB5045
+2024-12-25 10:23:34 INFO::Fitting model to feature number 26, t__SGB14311
+2024-12-25 10:23:34 INFO::Fitting model to feature number 27, t__SGB1790
+2024-12-25 10:23:34 INFO::Fitting model to feature number 28, t__SGB1934
+2024-12-25 10:23:34 INFO::Fitting model to feature number 29, t__SGB4925
+2024-12-25 10:23:34 INFO::Fitting model to feature number 30, t__SGB4577
+2024-12-25 10:23:34 INFO::Fitting model to feature number 31, t__SGB4581
+2024-12-25 10:23:34 INFO::Fitting model to feature number 32, t__SGB1965
+2024-12-25 10:23:34 INFO::Fitting model to feature number 33, t__SGB5089
+2024-12-25 10:23:34 INFO::Fitting model to feature number 34, t__SGB6140
+2024-12-25 10:23:34 INFO::Fitting model to feature number 35, t__SGB5077
+2024-12-25 10:23:34 INFO::Fitting model to feature number 36, t__SGB4993
+2024-12-25 10:23:34 INFO::Fitting model to feature number 37, t__SGB1877
+2024-12-25 10:23:34 INFO::Fitting model to feature number 38, t__SGB4563
+2024-12-25 10:23:34 INFO::Fitting model to feature number 39, t__SGB14306
+2024-12-25 10:23:34 INFO::Fitting model to feature number 40, t__SGB4715
+2024-12-25 10:23:34 INFO::Fitting model to feature number 41, t__SGB1862
+2024-12-25 10:23:34 INFO::Fitting model to feature number 42, t__SGB4365
+2024-12-25 10:23:34 INFO::Fitting model to feature number 43, t__SGB4575
+2024-12-25 10:23:34 INFO::Fitting model to feature number 44, t__SGB6956
+2024-12-25 10:23:34 INFO::Fitting model to feature number 45, t__SGB6139
+2024-12-25 10:23:34 INFO::Fitting model to feature number 46, t__SGB1815
+2024-12-25 10:23:34 INFO::Fitting model to feature number 47, t__SGB4262
+2024-12-25 10:23:34 INFO::Fitting model to feature number 48, t__SGB1871
+2024-12-25 10:23:34 INFO::Fitting model to feature number 49, t__SGB6754
+2024-12-25 10:23:34 INFO::Fitting model to feature number 50, t__SGB4882
+2024-12-25 10:23:34 INFO::Fitting model to feature number 51, t__SGB4198
+2024-12-25 10:23:35 INFO::Fitting model to feature number 52, t__SGB5043
+2024-12-25 10:23:35 INFO::Fitting model to feature number 53, t__SGB4964
+2024-12-25 10:23:35 INFO::Fitting model to feature number 54, t__SGB4886
+2024-12-25 10:23:35 INFO::Fitting model to feature number 55, t__SGB6340
+2024-12-25 10:23:35 INFO::Fitting model to feature number 56, t__SGB1949
+2024-12-25 10:23:35 INFO::Fitting model to feature number 57, t__SGB5792
+2024-12-25 10:23:35 INFO::Fitting model to feature number 58, t__SGB4871
+2024-12-25 10:23:35 INFO::Fitting model to feature number 59, t__SGB15342
+2024-12-25 10:23:35 INFO::Fitting model to feature number 60, t__SGB14253
+2024-12-25 10:23:35 INFO::Fitting model to feature number 61, t__SGB5062
+2024-12-25 10:23:35 INFO::Fitting model to feature number 62, t__SGB4813
+2024-12-25 10:23:35 INFO::Fitting model to feature number 63, t__SGB4837
+2024-12-25 10:23:35 INFO::Fitting model to feature number 64, t__SGB6141
+2024-12-25 10:23:35 INFO::Fitting model to feature number 65, t__SGB1784
+2024-12-25 10:23:35 INFO::Fitting model to feature number 66, t__SGB10068
+2024-12-25 10:23:35 INFO::Fitting model to feature number 67, t__SGB8002
+2024-12-25 10:23:35 INFO::Fitting model to feature number 68, t__SGB1830
+2024-12-25 10:23:35 INFO::Fitting model to feature number 69, t__SGB15356
+2024-12-25 10:23:35 INFO::Fitting model to feature number 70, t__SGB15316
+2024-12-25 10:23:35 INFO::Fitting model to feature number 71, t__SGB5090
+2024-12-25 10:23:35 INFO::Fitting model to feature number 72, t__SGB4820
+2024-12-25 10:23:35 INFO::Fitting model to feature number 73, t__SGB14909
+2024-12-25 10:23:35 INFO::Fitting model to feature number 74, t__SGB15286
+2024-12-25 10:23:35 INFO::Fitting model to feature number 75, t__SGB4269
+2024-12-25 10:23:35 INFO::Fitting model to feature number 76, t__SGB15106
+2024-12-25 10:23:35 INFO::Fitting model to feature number 77, t__SGB1962
+2024-12-25 10:23:35 INFO::Fitting model to feature number 78, t__SGB4706
+2024-12-25 10:23:35 INFO::Fitting model to feature number 79, t__SGB4828
+2024-12-25 10:23:35 INFO::Fitting model to feature number 80, t__SGB1857
+2024-12-25 10:23:35 INFO::Fitting model to feature number 81, t__SGB4874
+2024-12-25 10:23:35 INFO::Fitting model to feature number 82, t__SGB4532
+2024-12-25 10:23:35 INFO::Fitting model to feature number 83, t__SGB4705
+2024-12-25 10:23:35 INFO::Fitting model to feature number 84, t__SGB58520
+2024-12-25 10:23:35 INFO::Fitting model to feature number 85, t__SGB5082
+2024-12-25 10:23:35 INFO::Fitting model to feature number 86, t__SGB4914
+2024-12-25 10:23:35 INFO::Fitting model to feature number 87, t__SGB4651
+2024-12-25 10:23:35 INFO::Fitting model to feature number 88, t__SGB8007_group
+2024-12-25 10:23:36 INFO::Fitting model to feature number 89, t__SGB4771
+2024-12-25 10:23:36 INFO::Fitting model to feature number 90, t__SGB9663_group
+2024-12-25 10:23:36 INFO::Fitting model to feature number 91, t__SGB4540_group
+2024-12-25 10:23:36 INFO::Fitting model to feature number 92, t__SGB1832
+2024-12-25 10:23:36 INFO::Fitting model to feature number 93, t__SGB5180
+2024-12-25 10:23:36 INFO::Fitting model to feature number 94, t__SGB4936
+2024-12-25 10:23:36 INFO::Fitting model to feature number 95, t__SGB4811
+2024-12-25 10:23:36 INFO::Fitting model to feature number 96, t__SGB4815
+2024-12-25 10:23:36 INFO::Fitting model to feature number 97, t__SGB4721
+2024-12-25 10:23:36 INFO::Fitting model to feature number 98, t__SGB9262
+2024-12-25 10:23:36 INFO::Fitting model to feature number 99, t__SGB47850
+2024-12-25 10:23:36 INFO::Fitting model to feature number 100, t__SGB15332
+2024-12-25 10:23:36 INFO::Fitting model to feature number 101, t__SGB15244
+2024-12-25 10:23:36 INFO::Fitting model to feature number 102, t__SGB4714
+2024-12-25 10:23:36 INFO::Fitting model to feature number 103, t__SGB4749
+2024-12-25 10:23:36 INFO::Fitting model to feature number 104, t__SGB4767
+2024-12-25 10:23:36 INFO::Fitting model to feature number 105, t__SGB15091
+2024-12-25 10:23:36 INFO::Fitting model to feature number 106, t__SGB14861
+2024-12-25 10:23:36 INFO::Fitting model to feature number 107, t__SGB4868
+2024-12-25 10:23:36 INFO::Fitting model to feature number 108, t__SGB14177
+2024-12-25 10:23:36 INFO::Fitting model to feature number 109, t__SGB4957
+2024-12-25 10:23:36 INFO::Fitting model to feature number 110, t__SGB4644
+2024-12-25 10:23:36 INFO::Fitting model to feature number 111, t__SGB4778
+2024-12-25 10:23:36 INFO::Fitting model to feature number 112, t__SGB15053
+2024-12-25 10:23:36 INFO::Fitting model to feature number 113, t__SGB1963
+2024-12-25 10:23:36 INFO::Fitting model to feature number 114, t__SGB4670
+2024-12-25 10:23:36 INFO::Fitting model to feature number 115, t__SGB14991
+2024-12-25 10:23:36 INFO::Fitting model to feature number 116, t__SGB4571
+2024-12-25 10:23:36 INFO::Fitting model to feature number 117, t__SGB3964
+2024-12-25 10:23:36 INFO::Fitting model to feature number 118, t__SGB4669
+2024-12-25 10:23:36 INFO::Fitting model to feature number 119, t__SGB15346
+2024-12-25 10:23:36 INFO::Fitting model to feature number 120, t__SGB4831
+2024-12-25 10:23:36 INFO::Fitting model to feature number 121, t__SGB4425_group
+2024-12-25 10:23:36 INFO::Fitting model to feature number 122, t__SGB4659
+2024-12-25 10:23:36 INFO::Fitting model to feature number 123, t__SGB4582
+2024-12-25 10:23:36 INFO::Fitting model to feature number 124, t__SGB4395
+2024-12-25 10:23:36 INFO::Fitting model to feature number 125, t__SGB4959
+2024-12-25 10:23:37 INFO::Fitting model to feature number 126, t__SGB6178
+2024-12-25 10:23:37 INFO::Fitting model to feature number 127, t__SGB2295
+2024-12-25 10:23:37 INFO::Fitting model to feature number 128, t__SGB15318
+2024-12-25 10:23:37 INFO::Fitting model to feature number 129, t__SGB15267
+2024-12-25 10:23:37 INFO::Fitting model to feature number 130, t__SGB3574
+2024-12-25 10:23:37 INFO::Fitting model to feature number 131, t__SGB4711
+2024-12-25 10:23:37 INFO::Fitting model to feature number 132, t__SGB4826
+2024-12-25 10:23:37 INFO::Fitting model to feature number 133, t__SGB15233
+2024-12-25 10:23:37 INFO::Fitting model to feature number 134, t__SGB4716
+2024-12-25 10:23:37 INFO::Fitting model to feature number 135, t__SGB14993
+2024-12-25 10:23:37 INFO::Fitting model to feature number 136, t__SGB2303
+2024-12-25 10:23:37 INFO::Fitting model to feature number 137, t__SGB4768
+2024-12-25 10:23:37 INFO::Fitting model to feature number 138, t__SGB9260
+2024-12-25 10:23:37 INFO::Fitting model to feature number 139, t__SGB15236
+2024-12-25 10:23:37 INFO::Fitting model to feature number 140, t__SGB6847
+2024-12-25 10:23:37 INFO::Fitting model to feature number 141, t__SGB15317
+2024-12-25 10:23:37 INFO::Fitting model to feature number 142, t__SGB15291
+2024-12-25 10:23:37 INFO::Fitting model to feature number 143, t__SGB15350
+2024-12-25 10:23:37 INFO::Fitting model to feature number 144, t__SGB15467
+2024-12-25 10:23:37 INFO::Fitting model to feature number 145, t__SGB15254
+2024-12-25 10:23:37 INFO::Fitting model to feature number 146, t__SGB4769
+2024-12-25 10:23:37 INFO::Fitting model to feature number 147, t__SGB3957
+2024-12-25 10:23:37 INFO::Fitting model to feature number 148, t__SGB15249
+2024-12-25 10:23:37 INFO::Fitting model to feature number 149, t__SGB4963
+2024-12-25 10:23:37 INFO::Fitting model to feature number 150, t__SGB10115
+2024-12-25 10:23:37 INFO::Fitting model to feature number 151, t__SGB15028
+2024-12-25 10:23:37 INFO::Fitting model to feature number 152, t__SGB4938
+2024-12-25 10:23:37 INFO::Fitting model to feature number 153, t__SGB80143
+2024-12-25 10:23:37 INFO::Fitting model to feature number 154, t__SGB15031
+2024-12-25 10:23:37 INFO::Fitting model to feature number 155, t__SGB4910
+2024-12-25 10:23:37 INFO::Fitting model to feature number 156, t__SGB4552
+2024-12-25 10:23:37 INFO::Fitting model to feature number 157, t__SGB15452
+2024-12-25 10:23:37 INFO::Fitting model to feature number 158, t__SGB6148
+2024-12-25 10:23:37 INFO::Fitting model to feature number 159, t__SGB4342
+2024-12-25 10:23:37 INFO::Fitting model to feature number 160, t__SGB14969
+2024-12-25 10:23:37 INFO::Fitting model to feature number 161, t__SGB4751
+2024-12-25 10:23:38 INFO::Fitting model to feature number 162, t__SGB4780
+2024-12-25 10:23:38 INFO::Fitting model to feature number 163, t__SGB72916
+2024-12-25 10:23:38 INFO::Fitting model to feature number 164, t__SGB17248
+2024-12-25 10:23:38 INFO::Fitting model to feature number 165, t__SGB14912
+2024-12-25 10:23:38 INFO::Fitting model to feature number 166, t__SGB15216
+2024-12-25 10:23:38 INFO::Fitting model to feature number 167, t__SGB4777
+2024-12-25 10:23:38 INFO::Fitting model to feature number 168, t__SGB4712
+2024-12-25 10:23:38 INFO::Fitting model to feature number 169, t__SGB4893
+2024-12-25 10:23:38 INFO::Fitting model to feature number 170, t__SGB4772
+2024-12-25 10:23:38 INFO::Fitting model to feature number 171, t__SGB14834
+2024-12-25 10:23:38 INFO::Fitting model to feature number 172, t__SGB15093
+2024-12-25 10:23:38 INFO::Fitting model to feature number 173, t__SGB14250
+2024-12-25 10:23:38 INFO::Fitting model to feature number 174, t__SGB4770
+2024-12-25 10:23:38 INFO::Fitting model to feature number 175, t__SGB4750
+2024-12-25 10:23:38 INFO::Fitting model to feature number 176, t__SGB15411
+2024-12-25 10:23:38 INFO::Fitting model to feature number 177, t__SGB4779
+2024-12-25 10:23:38 INFO::Fitting model to feature number 178, t__SGB15229
+2024-12-25 10:23:38 INFO::Fitting model to feature number 179, t__SGB4951
+2024-12-25 10:23:38 INFO::Fitting model to feature number 180, t__SGB15374
+2024-12-25 10:23:38 INFO::Fitting model to feature number 181, t__SGB4782
+2024-12-25 10:23:38 INFO::Fitting model to feature number 182, t__SGB4816
+2024-12-25 10:23:38 INFO::Fitting model to feature number 183, t__SGB3813
+2024-12-25 10:23:38 INFO::Fitting model to feature number 184, t__SGB1785
+2024-12-25 10:23:38 INFO::Fitting model to feature number 185, t__SGB8056
+2024-12-25 10:23:38 INFO::Fitting model to feature number 186, t__SGB15413
+2024-12-25 10:23:38 INFO::Fitting model to feature number 187, t__SGB71759
+2024-12-25 10:23:38 INFO::Fitting model to feature number 188, t__SGB63327
+2024-12-25 10:23:38 INFO::Fitting model to feature number 189, t__SGB2290
+2024-12-25 10:23:38 INFO::Fitting model to feature number 190, t__SGB4665
+2024-12-25 10:23:38 INFO::Fitting model to feature number 191, t__SGB17244_group
+2024-12-25 10:23:38 INFO::Fitting model to feature number 192, t__SGB4781
+2024-12-25 10:23:38 INFO::Fitting model to feature number 193, t__SGB25416
+2024-12-25 10:23:38 INFO::Fitting model to feature number 194, t__SGB1644
+2024-12-25 10:23:38 INFO::Fitting model to feature number 195, t__SGB17256
+2024-12-25 10:23:39 INFO::Fitting model to feature number 196, t__SGB4422
+2024-12-25 10:23:39 INFO::Fitting model to feature number 197, t__SGB4608
+2024-12-25 10:23:39 INFO::Fitting model to feature number 198, t__SGB1626
+2024-12-25 10:23:39 INFO::Fitting model to feature number 199, t__SGB14535_group
+2024-12-25 10:23:39 INFO::Fitting model to feature number 200, t__SGB15300
+2024-12-25 10:23:39 INFO::Fitting model to feature number 201, t__SGB1861
+2024-12-25 10:23:39 INFO::Fitting model to feature number 202, t__SGB1853
+2024-12-25 10:23:39 INFO::Fitting model to feature number 203, t__SGB6796
+2024-12-25 10:23:39 INFO::Fitting model to feature number 204, t__SGB15373
+2024-12-25 10:23:39 INFO::Fitting model to feature number 205, t__SGB5190
+2024-12-25 10:23:39 INFO::Fitting model to feature number 206, t__SGB15238
+2024-12-25 10:23:39 INFO::Fitting model to feature number 207, t__SGB14824_group
+2024-12-25 10:23:39 INFO::Fitting model to feature number 208, t__SGB15323
+2024-12-25 10:23:39 INFO::Fitting model to feature number 209, t__SGB6806
+2024-12-25 10:23:39 INFO::Fitting model to feature number 210, t__SGB15370
+2024-12-25 10:23:39 INFO::Fitting model to feature number 211, t__SGB2296
+2024-12-25 10:23:39 INFO::Fitting model to feature number 212, t__SGB5076
+2024-12-25 10:23:39 INFO::Fitting model to feature number 213, t__SGB5117
+2024-12-25 10:23:39 INFO::Fitting model to feature number 214, t__SGB3965
+2024-12-25 10:23:39 INFO::Fitting model to feature number 215, t__SGB15225
+2024-12-25 10:23:39 INFO::Fitting model to feature number 216, t__SGB15052
+2024-12-25 10:23:39 INFO::Fitting model to feature number 217, t__SGB2325
+2024-12-25 10:23:39 INFO::Fitting model to feature number 218, t__SGB15333
+2024-12-25 10:23:39 INFO::Fitting model to feature number 219, t__SGB15383
+2024-12-25 10:23:39 INFO::Fitting model to feature number 220, t__SGB14888
+2024-12-25 10:23:39 INFO::Fitting model to feature number 221, t__SGB6173
+2024-12-25 10:23:39 INFO::Fitting model to feature number 222, t__SGB25497
+2024-12-25 10:23:39 INFO::Fitting model to feature number 223, t__SGB8071
+2024-12-25 10:23:39 INFO::Fitting model to feature number 224, t__SGB15081
+2024-12-25 10:23:40 INFO::Fitting model to feature number 225, t__SGB15012
+2024-12-25 10:23:40 INFO::Fitting model to feature number 226, t__SGB15146
+2024-12-25 10:23:40 INFO::Fitting model to feature number 227, t__SGB15145
+2024-12-25 10:23:40 INFO::Fitting model to feature number 228, t__SGB15265
+2024-12-25 10:23:40 INFO::Fitting model to feature number 229, t__SGB15299
+2024-12-25 10:23:40 INFO::Fitting model to feature number 230, t__SGB3988
+2024-12-25 10:23:40 INFO::Fitting model to feature number 231, t__SGB15049
+2024-12-25 10:23:40 INFO::Fitting model to feature number 232, t__SGB25493
+2024-12-25 10:23:40 INFO::Fitting model to feature number 233, t__SGB14999
+2024-12-25 10:23:40 INFO::Fitting model to feature number 234, t__SGB15089
+2024-12-25 10:23:40 INFO::Fitting model to feature number 235, t__SGB15132
+2024-12-25 10:23:40 INFO::Fitting model to feature number 236, t__SGB4121
+2024-12-25 10:23:40 INFO::Fitting model to feature number 237, t__SGB14890
+2024-12-25 10:23:40 INFO::Fitting model to feature number 238, t__SGB14252
+2024-12-25 10:23:40 INFO::Fitting model to feature number 239, t__SGB6952
+2024-12-25 10:23:40 INFO::Fitting model to feature number 240, t__SGB15051
+2024-12-25 10:23:40 INFO::Fitting model to feature number 241, t__SGB14963
+2024-12-25 10:23:40 INFO::Fitting model to feature number 242, t__SGB16971_group
+2024-12-25 10:23:40 INFO::Fitting model to feature number 243, t__SGB6939
+2024-12-25 10:23:40 INFO::Fitting model to feature number 244, t__SGB3958
+2024-12-25 10:23:40 INFO::Fitting model to feature number 245, t__SGB17163_group
+2024-12-25 10:23:40 INFO::Fitting model to feature number 246, t__SGB15295
+2024-12-25 10:23:41 INFO::Fitting model to feature number 247, t__SGB6473
+2024-12-25 10:23:41 INFO::Fitting model to feature number 248, t__SGB15078
+2024-12-25 10:23:41 INFO::Fitting model to feature number 249, t__SGB17167_group
+2024-12-25 10:23:41 INFO::Fitting model to feature number 250, t__SGB14853
+2024-12-25 10:23:41 INFO::Fitting model to feature number 251, t__SGB8095
+2024-12-25 10:23:41 INFO::Fitting model to feature number 252, t__SGB6936
+2024-12-25 10:23:41 INFO::Fitting model to feature number 253, t__SGB14809
+2024-12-25 10:23:41 INFO::Fitting model to feature number 254, t__SGB4832
+2024-12-25 10:23:41 INFO::Fitting model to feature number 255, t__SGB17237
+2024-12-25 10:23:41 INFO::Fitting model to feature number 256, t__SGB4367
+2024-12-25 10:23:41 INFO::Fitting model to feature number 257, t__SGB5763_group
+2024-12-25 10:23:41 INFO::Fitting model to feature number 258, t__SGB5075
+2024-12-25 10:23:41 INFO::Fitting model to feature number 259, t__SGB4537
+2024-12-25 10:23:41 INFO::Fitting model to feature number 260, t__SGB4348
+2024-12-25 10:23:41 INFO::Fitting model to feature number 261, t__SGB9286
+2024-12-25 10:23:41 INFO::Fitting model to feature number 262, t__SGB1786
+2024-12-25 10:23:41 INFO::Fitting model to feature number 263, t__SGB4119
+2024-12-25 10:23:41 INFO::Fitting model to feature number 264, t__SGB15154
+2024-12-25 10:23:41 INFO::Fitting model to feature number 265, t__SGB3922_group
+2024-12-25 10:23:41 INFO::Fitting model to feature number 266, t__SGB9281
+2024-12-25 10:23:41 INFO::Fitting model to feature number 267, t__SGB15022
+2024-12-25 10:23:41 INFO::Fitting model to feature number 268, t__SGB15143
+2024-12-25 10:23:41 INFO::Fitting model to feature number 269, t__SGB15124
+2024-12-25 10:23:41 INFO::Fitting model to feature number 270, t__SGB15126
+2024-12-25 10:23:41 INFO::Fitting model to feature number 271, t__SGB966
+2024-12-25 10:23:41 INFO::Fitting model to feature number 272, t__SGB4761
+2024-12-25 10:23:41 INFO::Fitting model to feature number 273, t__SGB4741
+2024-12-25 10:23:41 INFO::Fitting model to feature number 274, t__SGB4044
+2024-12-25 10:23:41 INFO::Fitting model to feature number 275, t__SGB15234
+2024-12-25 10:23:41 INFO::Fitting model to feature number 276, t__SGB6750
+2024-12-25 10:23:41 INFO::Fitting model to feature number 277, t__SGB15123
+2024-12-25 10:23:41 INFO::Fitting model to feature number 278, t__SGB17152
+2024-12-25 10:23:41 INFO::Fitting model to feature number 279, t__SGB3934_group
+2024-12-25 10:23:42 INFO::Fitting model to feature number 280, t__SGB6174
+2024-12-25 10:23:42 INFO::Fitting model to feature number 281, t__SGB8053
+2024-12-25 10:23:42 INFO::Fitting model to feature number 282, t__SGB14924
+2024-12-25 10:23:42 INFO::Fitting model to feature number 283, t__SGB4394
+2024-12-25 10:23:42 INFO::Fitting model to feature number 284, t__SGB19823
+2024-12-25 10:23:42 INFO::Fitting model to feature number 285, t__SGB4762
+2024-12-25 10:23:42 INFO::Fitting model to feature number 286, t__SGB8168
+2024-12-25 10:23:42 INFO::Fitting model to feature number 287, t__SGB14937
+2024-12-25 10:23:42 INFO::Fitting model to feature number 288, t__SGB8059_group
+2024-12-25 10:23:42 INFO::Fitting model to feature number 289, t__SGB15271
+2024-12-25 10:23:42 INFO::Fitting model to feature number 290, t__SGB29347
+2024-12-25 10:23:42 INFO::Fitting model to feature number 291, t__SGB6829
+2024-12-25 10:23:42 INFO::Fitting model to feature number 292, t__SGB7298_group
+2024-12-25 10:23:42 INFO::Fitting model to feature number 293, t__SGB4758
+2024-12-25 10:23:42 INFO::Fitting model to feature number 294, t__SGB4037
+2024-12-25 10:23:42 INFO::Fitting model to feature number 295, t__SGB6653
+2024-12-25 10:23:42 INFO::Fitting model to feature number 296, t__SGB19860_group
+2024-12-25 10:23:42 INFO::Fitting model to feature number 297, t__SGB79840
+2024-12-25 10:23:42 INFO::Fitting model to feature number 298, t__SGB8003
+2024-12-25 10:23:42 INFO::Fitting model to feature number 299, t__SGB5843
+2024-12-25 10:23:42 INFO::Fitting model to feature number 300, t__SGB15127
+2024-12-25 10:23:42 INFO::Fitting model to feature number 301, t__SGB17168
+2024-12-25 10:23:42 INFO::Fitting model to feature number 302, t__SGB7962
+2024-12-25 10:23:42 INFO::Fitting model to feature number 303, t__SGB5197
+2024-12-25 10:23:42 INFO::Fitting model to feature number 304, t__SGB82503
+2024-12-25 10:23:42 INFO::Fitting model to feature number 305, t__SGB63369
+2024-12-25 10:23:42 INFO::Fitting model to feature number 306, t__SGB7256
+2024-12-25 10:23:42 INFO::Fitting model to feature number 307, t__SGB7253
+2024-12-25 10:23:42 INFO::Fitting model to feature number 308, t__SGB25431
+2024-12-25 10:23:42 INFO::Fitting model to feature number 309, t__SGB14966
+2024-12-25 10:23:42 INFO::Fitting model to feature number 310, t__SGB14179
+2024-12-25 10:23:42 INFO::Fitting model to feature number 311, t__SGB14974
+2024-12-25 10:23:42 INFO::Fitting model to feature number 312, t__SGB15067
+2024-12-25 10:23:42 INFO::Fitting model to feature number 313, t__SGB8047_group
+2024-12-25 10:23:43 INFO::Fitting model to feature number 314, t__SGB8026
+2024-12-25 10:23:43 INFO::Fitting model to feature number 315, t__SGB8180_group
+2024-12-25 10:23:43 INFO::Fitting model to feature number 316, t__SGB14127
+2024-12-25 10:23:43 INFO::Fitting model to feature number 317, t__SGB8028_group
+2024-12-25 10:23:43 INFO::Fitting model to feature number 318, t__SGB4699
+2024-12-25 10:23:43 INFO::Fitting model to feature number 319, t__SGB4724
+2024-12-25 10:23:43 INFO::Fitting model to feature number 320, t__SGB19880
+2024-12-25 10:23:43 INFO::Fitting model to feature number 321, t__SGB4988
+2024-12-25 10:23:43 INFO::Fitting model to feature number 322, t__SGB748
+2024-12-25 10:23:43 INFO::Fitting model to feature number 323, t__SGB8255_group
+2024-12-25 10:23:43 INFO::Fitting model to feature number 324, t__SGB19882
+2024-12-25 10:23:43 INFO::Fitting model to feature number 325, t__SGB15272
+2024-12-25 10:23:43 INFO::Fitting model to feature number 326, t__SGB5200
+2024-12-25 10:23:43 INFO::Fitting model to feature number 327, t__SGB8000
+2024-12-25 10:23:43 INFO::Fitting model to feature number 328, t__SGB17132_group
+2024-12-25 10:23:43 INFO::Fitting model to feature number 329, t__SGB6179
+2024-12-25 10:23:43 INFO::Fitting model to feature number 330, t__SGB15410
+2024-12-25 10:23:43 INFO::Fitting model to feature number 331, t__SGB1858
+2024-12-25 10:23:43 INFO::Fitting model to feature number 332, t__SGB53517
+2024-12-25 10:23:43 INFO::Fitting model to feature number 333, t__SGB6744
+2024-12-25 10:23:43 INFO::Fitting model to feature number 334, t__SGB15015
+2024-12-25 10:23:43 INFO::Fitting model to feature number 335, t__SGB9391
+2024-12-25 10:23:43 INFO::Fitting model to feature number 336, t__SGB14142
+2024-12-25 10:23:43 INFO::Fitting model to feature number 337, t__SGB14845
+2024-12-25 10:23:43 INFO::Fitting model to feature number 338, t__SGB14894
+2024-12-25 10:23:43 INFO::Fitting model to feature number 339, t__SGB7263
+2024-12-25 10:23:43 INFO::Fitting model to feature number 340, t__SGB17234
+2024-12-25 10:23:43 INFO::Fitting model to feature number 341, t__SGB4290
+2024-12-25 10:23:43 INFO::Fitting model to feature number 342, t__SGB4191
+2024-12-25 10:23:43 INFO::Fitting model to feature number 343, t__SGB9228
+2024-12-25 10:23:43 INFO::Fitting model to feature number 344, t__SGB1903
+2024-12-25 10:23:43 INFO::Fitting model to feature number 345, t__SGB5051
+2024-12-25 10:23:43 INFO::Fitting model to feature number 346, t__SGB1941
+2024-12-25 10:23:43 INFO::Fitting model to feature number 347, t__SGB4867
+2024-12-25 10:23:43 INFO::Fitting model to feature number 348, t__SGB14798
+2024-12-25 10:23:43 INFO::Fitting model to feature number 349, t__SGB2326
+2024-12-25 10:23:43 INFO::Fitting model to feature number 350, t__SGB2301
+2024-12-25 10:23:44 INFO::Fitting model to feature number 351, t__SGB2328
+2024-12-25 10:23:44 INFO::Fitting model to feature number 352, t__SGB49168
+2024-12-25 10:23:44 INFO::Fitting model to feature number 353, t__SGB1855
+2024-12-25 10:23:44 INFO::Fitting model to feature number 354, t__SGB14807
+2024-12-25 10:23:44 INFO::Fitting model to feature number 355, t__SGB15120
+2024-12-25 10:23:44 INFO::Fitting model to feature number 356, t__SGB4584
+2024-12-25 10:23:44 INFO::Fitting model to feature number 357, t__SGB4046
+2024-12-25 10:23:44 INFO::Fitting model to feature number 358, t__SGB3996
+2024-12-25 10:23:44 INFO::Fitting model to feature number 359, t__SGB14921
+2024-12-25 10:23:44 INFO::Fitting model to feature number 360, t__SGB4606
+2024-12-25 10:23:44 INFO::Fitting model to feature number 361, t__SGB4763
+2024-12-25 10:23:44 INFO::Fitting model to feature number 362, t__SGB4703
+2024-12-25 10:23:44 INFO::Fitting model to feature number 363, t__SGB4753
+2024-12-25 10:23:44 INFO::Fitting model to feature number 364, t__SGB4031
+2024-12-25 10:23:44 INFO::Fitting model to feature number 365, t__SGB3961
+2024-12-25 10:23:44 INFO::Fitting model to feature number 366, t__SGB4987
+2024-12-25 10:23:44 INFO::Fitting model to feature number 367, t__SGB15131
+2024-12-25 10:23:44 INFO::Fitting model to feature number 368, t__SGB14838
+2024-12-25 10:23:44 INFO::Fitting model to feature number 369, t__SGB4862
+2024-12-25 10:23:44 INFO::Fitting model to feature number 370, t__SGB4613
+2024-12-25 10:23:44 INFO::Fitting model to feature number 371, t__SGB71883
+2024-12-25 10:23:44 INFO::Fitting model to feature number 372, t__SGB14837
+2024-12-25 10:23:44 INFO::Fitting model to feature number 373, t__SGB72336
+2024-12-25 10:23:44 INFO::Fitting model to feature number 374, t__SGB79883
+2024-12-25 10:23:44 INFO::Fitting model to feature number 375, t__SGB17169
+2024-12-25 10:23:44 INFO::Fitting model to feature number 376, t__SGB14995
+2024-12-25 10:23:44 INFO::Fitting model to feature number 377, t__SGB14143
+2024-12-25 10:23:44 INFO::Fitting model to feature number 378, t__SGB79822
+2024-12-25 10:23:44 INFO::Fitting model to feature number 379, t__SGB4742
+2024-12-25 10:23:44 INFO::Fitting model to feature number 380, t__SGB7264
+2024-12-25 10:23:44 INFO::Fitting model to feature number 381, t__SGB2071
+2024-12-25 10:23:44 INFO::Fitting model to feature number 382, t__SGB5060
+2024-12-25 10:23:44 INFO::Fitting model to feature number 383, t__SGB15260
+2024-12-25 10:23:44 INFO::Fitting model to feature number 384, t__SGB1891
+2024-12-25 10:23:44 INFO::Fitting model to feature number 385, t__SGB4588
+2024-12-25 10:23:44 INFO::Fitting model to feature number 386, t__SGB1829
+2024-12-25 10:23:44 INFO::Fitting model to feature number 387, t__SGB15447
+2024-12-25 10:23:44 INFO::Fitting model to feature number 388, t__SGB4966
+2024-12-25 10:23:45 INFO::Fitting model to feature number 389, t__SGB4448
+2024-12-25 10:23:45 INFO::Fitting model to feature number 390, t__SGB4788
+2024-12-25 10:23:45 INFO::Fitting model to feature number 391, t__SGB1846
+2024-12-25 10:23:45 INFO::Fitting model to feature number 392, t__SGB14341
+2024-12-25 10:23:45 INFO::Fitting model to feature number 393, t__SGB14990
+2024-12-25 10:23:45 INFO::Fitting model to feature number 394, t__SGB10130
+2024-12-25 10:23:45 INFO::Fitting model to feature number 395, t__SGB4746
+2024-12-25 10:23:45 INFO::Fitting model to feature number 396, t__SGB15121
+2024-12-25 10:23:45 INFO::Fitting model to feature number 397, t__SGB14941
+2024-12-25 10:23:45 INFO::Fitting model to feature number 398, t__SGB4960
+2024-12-25 10:23:45 INFO::Fitting model to feature number 399, t__SGB14932
+2024-12-25 10:23:45 INFO::Fitting model to feature number 400, t__SGB4725
+2024-12-25 10:23:45 INFO::Fitting model to feature number 401, t__SGB29328
+2024-12-25 10:23:45 INFO::Fitting model to feature number 402, t__SGB4438
+2024-12-25 10:23:45 INFO::Fitting model to feature number 403, t__SGB15087
+2024-12-25 10:23:45 INFO::Fitting model to feature number 404, t__SGB6846
+2024-12-25 10:23:45 INFO::Fitting model to feature number 405, t__SGB14960
+2024-12-25 10:23:45 INFO::Fitting model to feature number 406, t__SGB8130
+2024-12-25 10:23:45 INFO::Fitting model to feature number 407, t__SGB15159
+2024-12-25 10:23:45 INFO::Fitting model to feature number 408, t__SGB14972
+2024-12-25 10:23:45 INFO::Fitting model to feature number 409, t__SGB4617
+2024-12-25 10:23:45 INFO::Fitting model to feature number 410, t__SGB63326
+2024-12-25 10:23:45 INFO::Fitting model to feature number 411, t__SGB14898
+2024-12-25 10:23:45 INFO::Fitting model to feature number 412, t__SGB15878
+2024-12-25 10:23:45 INFO::Fitting model to feature number 413, t__SGB4447
+2024-12-25 10:23:45 INFO::Fitting model to feature number 414, t__SGB4166
+2024-12-25 10:23:45 INFO::Fitting model to feature number 415, t__SGB4614
+2024-12-25 10:23:45 INFO::Fitting model to feature number 416, t__SGB7295
+2024-12-25 10:23:45 INFO::Fitting model to feature number 417, t__SGB17157
+2024-12-25 10:23:46 INFO::Fitting model to feature number 418, t__SGB8249
+2024-12-25 10:23:46 INFO::Fitting model to feature number 419, t__SGB6826
+2024-12-25 10:23:46 INFO::Fitting model to feature number 420, t__SGB4421
+2024-12-25 10:23:46 INFO::Fitting model to feature number 421, t__SGB4810
+2024-12-25 10:23:46 INFO::Fitting model to feature number 422, t__SGB15213
+2024-12-25 10:23:46 INFO::Fitting model to feature number 423, t__SGB7265
+2024-12-25 10:23:46 INFO::Fitting model to feature number 424, t__SGB7082
+2024-12-25 10:23:46 INFO::Fitting model to feature number 425, t__SGB17154
+2024-12-25 10:23:46 INFO::Fitting model to feature number 426, t__SGB6962
+2024-12-25 10:23:46 INFO::Fitting model to feature number 427, t__SGB6771
+2024-12-25 10:23:46 INFO::Fitting model to feature number 428, t__SGB97158
+2024-12-25 10:23:46 INFO::Fitting model to feature number 429, t__SGB17130_group
+2024-12-25 10:23:46 INFO::Fitting model to feature number 430, t__SGB6007
+2024-12-25 10:23:46 INFO::Fitting model to feature number 431, t__SGB4630
+2024-12-25 10:23:46 INFO::Fitting model to feature number 432, t__SGB17137_group
+2024-12-25 10:23:46 INFO::Fitting model to feature number 433, t__SGB14962
+2024-12-25 10:23:46 INFO::Fitting model to feature number 434, t__SGB5803_group
+2024-12-25 10:23:46 INFO::Fitting model to feature number 435, t__SGB8057
+2024-12-25 10:23:46 INFO::Fitting model to feature number 436, t__SGB4583
+2024-12-25 10:23:46 INFO::Fitting model to feature number 437, t__SGB14965
+2024-12-25 10:23:46 INFO::Fitting model to feature number 438, t__SGB6031
+2024-12-25 10:23:46 INFO::Fitting model to feature number 439, t__SGB5842
+2024-12-25 10:23:46 INFO::Fitting model to feature number 440, t__SGB16986
+2024-12-25 10:23:46 INFO::Fitting model to feature number 441, t__SGB4760
+2024-12-25 10:23:46 INFO::Fitting model to feature number 442, t__SGB77276
+2024-12-25 10:23:46 INFO::Fitting model to feature number 443, t__SGB6014
+2024-12-25 10:23:46 INFO::Fitting model to feature number 444, t__SGB9272
+2024-12-25 10:23:46 INFO::Fitting model to feature number 445, t__SGB4834
+2024-12-25 10:23:46 INFO::Fitting model to feature number 446, t__SGB17158_group
+2024-12-25 10:23:46 INFO::Fitting model to feature number 447, t__SGB5868
+2024-12-25 10:23:46 INFO::Fitting model to feature number 448, t__SGB4710
+2024-12-25 10:23:46 INFO::Fitting model to feature number 449, t__SGB4709
+2024-12-25 10:23:46 INFO::Fitting model to feature number 450, t__SGB4040
+2024-12-25 10:23:46 INFO::Fitting model to feature number 451, t__SGB5858
+2024-12-25 10:23:46 INFO::Fitting model to feature number 452, t__SGB10114
+2024-12-25 10:23:47 INFO::Counting total values for each feature
+2024-12-25 10:23:47 INFO::Writing residuals to file G:/deeplearning/CRC/benchmarker/t_sgb/Result/feature_selection/new3/Batch/All_features_tools/CHN_SH-CRC/Maaslin2/CTR_CRC/residuals.rds
+2024-12-25 10:23:47 INFO::Writing fitted values to file G:/deeplearning/CRC/benchmarker/t_sgb/Result/feature_selection/new3/Batch/All_features_tools/CHN_SH-CRC/Maaslin2/CTR_CRC/fitted.rds
+2024-12-25 10:23:47 INFO::Writing all results to file (ordered by increasing q-values): G:/deeplearning/CRC/benchmarker/t_sgb/Result/feature_selection/new3/Batch/All_features_tools/CHN_SH-CRC/Maaslin2/CTR_CRC/all_results.tsv
+2024-12-25 10:23:47 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): G:/deeplearning/CRC/benchmarker/t_sgb/Result/feature_selection/new3/Batch/All_features_tools/CHN_SH-CRC/Maaslin2/CTR_CRC/significant_results.tsv
+2024-12-25 10:23:47 INFO::Writing heatmap of significant results to file: G:/deeplearning/CRC/benchmarker/t_sgb/Result/feature_selection/new3/Batch/All_features_tools/CHN_SH-CRC/Maaslin2/CTR_CRC/heatmap.pdf
+2024-12-25 10:23:47 INFO::Writing association plots (one for each significant association) to output folder: G:/deeplearning/CRC/benchmarker/t_sgb/Result/feature_selection/new3/Batch/All_features_tools/CHN_SH-CRC/Maaslin2/CTR_CRC
+2024-12-25 10:23:47 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-12-25 10:23:47 INFO::Plotting data for metadata number 1, Group
+2024-12-25 10:23:47 INFO::Creating boxplot for categorical data, Group vs t__SGB15452
+2024-12-25 10:23:47 INFO::Creating boxplot for categorical data, Group vs t__SGB1814
+2024-12-25 10:23:47 INFO::Creating boxplot for categorical data, Group vs t__SGB1949
+2024-12-25 10:23:48 INFO::Creating boxplot for categorical data, Group vs t__SGB4820
+2024-12-25 10:23:48 INFO::Creating boxplot for categorical data, Group vs t__SGB1934
+2024-12-25 10:23:48 INFO::Creating boxplot for categorical data, Group vs t__SGB4269
+2024-12-25 10:23:48 INFO::Creating boxplot for categorical data, Group vs t__SGB1836
+2024-12-25 10:23:48 INFO::Creating boxplot for categorical data, Group vs t__SGB15078
+2024-12-25 10:23:49 INFO::Creating boxplot for categorical data, Group vs t__SGB15154
+2024-12-25 10:23:49 INFO::Creating boxplot for categorical data, Group vs t__SGB4871
+2024-12-25 10:23:49 INFO::Creating boxplot for categorical data, Group vs t__SGB2318
+2024-12-25 10:23:49 INFO::Creating boxplot for categorical data, Group vs t__SGB4781
+2024-12-25 10:23:50 INFO::Creating boxplot for categorical data, Group vs t__SGB25493
+2024-12-25 10:23:50 INFO::Creating boxplot for categorical data, Group vs t__SGB4575
+2024-12-25 10:23:50 INFO::Creating boxplot for categorical data, Group vs t__SGB1790
+2024-12-25 10:23:50 INFO::Creating boxplot for categorical data, Group vs t__SGB1784
+2024-12-25 10:23:51 INFO::Creating boxplot for categorical data, Group vs t__SGB14993
+2024-12-25 10:23:51 INFO::Creating boxplot for categorical data, Group vs t__SGB1861
+2024-12-25 10:23:51 INFO::Creating boxplot for categorical data, Group vs t__SGB15143
+2024-12-25 10:23:51 INFO::Creating boxplot for categorical data, Group vs t__SGB4577
+2024-12-25 10:23:51 INFO::Creating boxplot for categorical data, Group vs t__SGB19882
+2024-12-25 10:23:52 INFO::Creating boxplot for categorical data, Group vs t__SGB14807
+2024-12-25 10:23:52 INFO::Creating boxplot for categorical data, Group vs t__SGB14837
+2024-12-25 10:23:52 INFO::Creating boxplot for categorical data, Group vs t__SGB4303
+2024-12-25 10:23:52 INFO::Creating boxplot for categorical data, Group vs t__SGB15300
+2024-12-25 10:23:53 INFO::Creating boxplot for categorical data, Group vs t__SGB4811
+2024-12-25 10:23:53 INFO::Creating boxplot for categorical data, Group vs t__SGB4699
+2024-12-25 10:23:53 INFO::Creating boxplot for categorical data, Group vs t__SGB4813
+2024-12-25 10:23:53 INFO::Creating boxplot for categorical data, Group vs t__SGB4826
+2024-12-25 10:23:54 INFO::Creating boxplot for categorical data, Group vs t__SGB2303
+2024-12-25 10:23:54 INFO::Creating boxplot for categorical data, Group vs t__SGB4815
+2024-12-25 10:23:54 INFO::Creating boxplot for categorical data, Group vs t__SGB6653
+2024-12-25 10:23:54 INFO::Creating boxplot for categorical data, Group vs t__SGB4837
+2024-12-25 10:23:54 INFO::Creating boxplot for categorical data, Group vs t__SGB1857
+2024-12-25 10:23:55 INFO::Creating boxplot for categorical data, Group vs t__SGB15286
+2024-12-25 10:23:55 INFO::Creating boxplot for categorical data, Group vs t__SGB4780
+2024-12-25 10:23:55 INFO::Creating boxplot for categorical data, Group vs t__SGB15132
+2024-12-25 10:23:55 INFO::Creating boxplot for categorical data, Group vs t__SGB4711
+2024-12-25 10:23:56 INFO::Creating boxplot for categorical data, Group vs t__SGB14972
+2024-12-25 10:23:56 INFO::Creating boxplot for categorical data, Group vs t__SGB3957
+2024-12-25 10:23:56 INFO::Creating boxplot for categorical data, Group vs t__SGB4670
+2024-12-25 10:23:56 INFO::Creating boxplot for categorical data, Group vs t__SGB1812
+2024-12-25 10:23:56 INFO::Creating boxplot for categorical data, Group vs t__SGB1877
+2024-12-25 10:23:57 INFO::Creating boxplot for categorical data, Group vs t__SGB15291
+2024-12-25 10:23:57 INFO::Creating boxplot for categorical data, Group vs t__SGB14991
+2024-12-25 10:23:57 INFO::Creating boxplot for categorical data, Group vs t__SGB29347
+2024-12-25 10:23:57 INFO::Creating boxplot for categorical data, Group vs t__SGB4422
+2024-12-25 10:23:58 INFO::Creating boxplot for categorical data, Group vs t__SGB4816
+2024-12-25 10:23:58 INFO::Creating boxplot for categorical data, Group vs t__SGB1867
+2024-12-25 10:23:58 INFO::Creating boxplot for categorical data, Group vs t__SGB4778
+2024-12-25 10:23:58 INFO::Creating boxplot for categorical data, Group vs t__SGB4532
+2024-12-25 10:23:59 INFO::Creating boxplot for categorical data, Group vs t__SGB63327
+2024-12-25 10:23:59 INFO::Creating boxplot for categorical data, Group vs t__SGB4563
+2024-12-25 10:23:59 INFO::Creating boxplot for categorical data, Group vs t__SGB4582
+2024-12-25 10:23:59 INFO::Creating boxplot for categorical data, Group vs t__SGB63369
+2024-12-25 10:23:59 INFO::Creating boxplot for categorical data, Group vs t__SGB15159
+2024-12-25 10:24:00 INFO::Creating boxplot for categorical data, Group vs t__SGB4925
+2024-12-25 10:24:00 INFO::Creating boxplot for categorical data, Group vs t__SGB6754
+2024-12-25 10:24:00 INFO::Creating boxplot for categorical data, Group vs t__SGB15410
+2024-12-25 10:24:01 INFO::Creating boxplot for categorical data, Group vs t__SGB14969
+2024-12-25 10:24:01 INFO::Creating boxplot for categorical data, Group vs t__SGB14912
+2024-12-25 10:24:01 INFO::Creating boxplot for categorical data, Group vs t__SGB3988
+2024-12-25 10:24:01 INFO::Creating boxplot for categorical data, Group vs t__SGB4810
+2024-12-25 10:24:01 INFO::Creating boxplot for categorical data, Group vs t__SGB4964
+2024-12-25 10:24:02 INFO::Creating boxplot for categorical data, Group vs t__SGB1965
+2024-12-25 10:24:02 INFO::Creating boxplot for categorical data, Group vs t__SGB14962
+2024-12-25 10:24:02 INFO::Creating boxplot for categorical data, Group vs t__SGB71759
+2024-12-25 10:24:02 INFO::Creating boxplot for categorical data, Group vs t__SGB6826
+2024-12-25 10:24:03 INFO::Creating boxplot for categorical data, Group vs t__SGB4874
+2024-12-25 10:24:03 INFO::Creating boxplot for categorical data, Group vs t__SGB7256
+2024-12-25 10:24:03 INFO::Creating boxplot for categorical data, Group vs t__SGB14535_group
+2024-12-25 10:24:03 INFO::Creating boxplot for categorical data, Group vs t__SGB4993
+2024-12-25 10:24:03 INFO::Creating boxplot for categorical data, Group vs t__SGB1830
+2024-12-25 10:24:04 INFO::Creating boxplot for categorical data, Group vs t__SGB5082
+2024-12-25 10:24:04 INFO::Creating boxplot for categorical data, Group vs t__SGB17244_group
+2024-12-25 10:24:04 INFO::Creating boxplot for categorical data, Group vs t__SGB15051
+2024-12-25 10:24:04 INFO::Creating boxplot for categorical data, Group vs t__SGB15295
+2024-12-25 10:24:05 INFO::Creating boxplot for categorical data, Group vs t__SGB5051
+2024-12-25 10:24:05 INFO::Creating boxplot for categorical data, Group vs t__SGB15216
+2024-12-25 10:24:05 INFO::Creating boxplot for categorical data, Group vs t__SGB15265
+2024-12-25 10:24:05 INFO::Creating boxplot for categorical data, Group vs t__SGB15015
+2024-12-25 10:24:05 INFO::Creating boxplot for categorical data, Group vs t__SGB25416
+2024-12-25 10:24:06 INFO::Creating boxplot for categorical data, Group vs t__SGB1844
+2024-12-25 10:24:06 INFO::Creating boxplot for categorical data, Group vs t__SGB4581
+2024-12-25 10:24:06 INFO::Creating boxplot for categorical data, Group vs t__SGB6847
+2024-12-25 10:24:06 INFO::Creating boxplot for categorical data, Group vs t__SGB4290
+2024-12-25 10:24:07 INFO::Creating boxplot for categorical data, Group vs t__SGB25431
+2024-12-25 10:24:07 INFO::Creating boxplot for categorical data, Group vs t__SGB6139
+2024-12-25 10:24:07 INFO::Creating boxplot for categorical data, Group vs t__SGB6141
+2024-12-25 10:24:07 INFO::Creating boxplot for categorical data, Group vs t__SGB1963
+2024-12-25 10:24:08 INFO::Creating boxplot for categorical data, Group vs t__SGB4552
+2024-12-25 10:24:08 INFO::Creating boxplot for categorical data, Group vs t__SGB14963
+2024-12-25 10:24:08 INFO::Creating boxplot for categorical data, Group vs t__SGB4571
+2024-12-25 10:24:08 INFO::Creating boxplot for categorical data, Group vs t__SGB1891
+2024-12-25 10:24:09 INFO::Creating boxplot for categorical data, Group vs t__SGB15413
+2024-12-25 10:24:09 INFO::Creating boxplot for categorical data, Group vs t__SGB4724
+2024-12-25 10:24:09 INFO::Creating boxplot for categorical data, Group vs t__SGB4710
+2024-12-25 10:24:09 INFO::Creating boxplot for categorical data, Group vs t__SGB4957
+2024-12-25 10:24:09 INFO::Creating boxplot for categorical data, Group vs t__SGB4749
+2024-12-25 10:24:10 INFO::Creating boxplot for categorical data, Group vs t__SGB5842
+2024-12-25 10:24:10 INFO::Creating boxplot for categorical data, Group vs t__SGB9228
+2024-12-25 10:24:10 INFO::Creating boxplot for categorical data, Group vs t__SGB14995
+2024-12-25 10:24:10 INFO::Creating boxplot for categorical data, Group vs t__SGB15124
+2024-12-25 10:24:11 INFO::Creating boxplot for categorical data, Group vs t__SGB4191
+2024-12-25 10:24:11 INFO::Creating boxplot for categorical data, Group vs t__SGB1858
+2024-12-25 10:24:11 INFO::Creating boxplot for categorical data, Group vs t__SGB4960
+2024-12-25 10:24:11 INFO::Creating boxplot for categorical data, Group vs t__SGB4933
+2024-12-25 10:24:11 INFO::Creating boxplot for categorical data, Group vs t__SGB4166
+2024-12-25 10:24:12 INFO::Creating boxplot for categorical data, Group vs t__SGB8057
+2024-12-25 10:24:12 INFO::Creating boxplot for categorical data, Group vs t__SGB1853
+2024-12-25 10:24:12 INFO::Creating boxplot for categorical data, Group vs t__SGB4606
+2024-12-25 10:24:12 INFO::Creating boxplot for categorical data, Group vs t__SGB4966
+2024-12-25 10:24:13 INFO::Creating boxplot for categorical data, Group vs t__SGB9272
+2024-12-25 10:24:13 INFO::Creating boxplot for categorical data, Group vs t__SGB6276
+2024-12-25 10:24:13 INFO::Creating boxplot for categorical data, Group vs t__SGB15091
+2024-12-25 10:24:13 INFO::Creating boxplot for categorical data, Group vs t__SGB4119
+2024-12-25 10:24:13 INFO::Creating boxplot for categorical data, Group vs t__SGB3922_group
+2024-12-25 10:24:14 INFO::Creating boxplot for categorical data, Group vs t__SGB19880
+2024-12-25 10:24:14 INFO::Creating boxplot for categorical data, Group vs t__SGB4951
+2024-12-25 10:24:14 INFO::Creating boxplot for categorical data, Group vs t__SGB15411
+2024-12-25 10:24:15 INFO::Creating boxplot for categorical data, Group vs t__SGB15267
+2024-12-25 10:24:15 INFO::Creating boxplot for categorical data, Group vs t__SGB77276
+2024-12-25 10:24:15 INFO::Creating boxplot for categorical data, Group vs t__SGB15350
+2024-12-25 10:24:16 INFO::Creating boxplot for categorical data, Group vs t__SGB1785
+2024-12-25 10:24:16 INFO::Creating boxplot for categorical data, Group vs t__SGB7295
+2024-12-25 10:24:16 INFO::Creating boxplot for categorical data, Group vs t__SGB4425_group
+2024-12-25 10:24:16 INFO::Creating boxplot for categorical data, Group vs t__SGB15374
+2024-12-25 10:24:17 INFO::Creating boxplot for categorical data, Group vs t__SGB1941
+2024-12-25 10:24:17 INFO::Creating boxplot for categorical data, Group vs t__SGB25497
+2024-12-25 10:24:17 INFO::Creating boxplot for categorical data, Group vs t__SGB4714
+2024-12-25 10:24:17 INFO::Creating boxplot for categorical data, Group vs t__SGB4342
+2024-12-25 10:24:17 INFO::Creating boxplot for categorical data, Group vs t__SGB14253
+2024-12-25 10:24:18 INFO::Creating boxplot for categorical data, Group vs t__SGB5117
+2024-12-25 10:24:18 INFO::Creating boxplot for categorical data, Group vs t__SGB4367
+2024-12-25 10:24:18 INFO::Creating boxplot for categorical data, Group vs t__SGB1786
+2024-12-25 10:24:18 INFO::Creating boxplot for categorical data, Group vs t__SGB4959
+2024-12-25 10:24:19 INFO::Creating boxplot for categorical data, Group vs t__SGB5090
+2024-12-25 10:24:19 INFO::Creating boxplot for categorical data, Group vs t__SGB1846
+2024-12-25 10:24:19 INFO::Creating boxplot for categorical data, Group vs t__SGB15383
+2024-12-25 10:24:19 INFO::Creating boxplot for categorical data, Group vs t__SGB15299
+2024-12-25 10:24:19 INFO::Creating boxplot for categorical data, Group vs t__SGB17157
+2024-12-25 10:24:20 INFO::Creating boxplot for categorical data, Group vs t__SGB17158_group
+2024-12-25 10:24:20 INFO::Creating boxplot for categorical data, Group vs t__SGB15447
+2024-12-25 10:24:20 INFO::Creating boxplot for categorical data, Group vs t__SGB4886
+2024-12-25 10:24:20 INFO::Creating boxplot for categorical data, Group vs t__SGB10130
+2024-12-25 10:24:20 INFO::Creating boxplot for categorical data, Group vs t__SGB17168
+2024-12-25 10:24:21 INFO::Creating boxplot for categorical data, Group vs t__SGB15316
+2024-12-25 10:24:21 INFO::Creating boxplot for categorical data, Group vs t__SGB4753
+2024-12-25 10:24:21 INFO::Creating boxplot for categorical data, Group vs t__SGB3965
+2024-12-25 10:24:21 INFO::Creating boxplot for categorical data, Group vs t__SGB2326
+2024-12-25 10:24:21 INFO::Creating boxplot for categorical data, Group vs t__SGB3934_group
+2024-12-25 10:24:22 INFO::Creating boxplot for categorical data, Group vs t__SGB10115
+2024-12-25 10:24:22 INFO::Creating boxplot for categorical data, Group vs t__SGB4709
+2024-12-25 10:24:22 INFO::Creating boxplot for categorical data, Group vs t__SGB4763
+2024-12-25 10:24:22 INFO::Creating boxplot for categorical data, Group vs t__SGB97158
+2024-12-25 10:24:22 INFO::Creating boxplot for categorical data, Group vs t__SGB9262
+2024-12-25 10:24:23 INFO::Creating boxplot for categorical data, Group vs t__SGB17169
+2024-12-25 10:24:23 INFO::Creating boxplot for categorical data, Group vs t__SGB4868
+2024-12-25 10:24:23 INFO::Creating boxplot for categorical data, Group vs t__SGB14999
+2024-12-25 10:24:23 INFO::Creating boxplot for categorical data, Group vs t__SGB4540_group
+2024-12-25 10:24:24 INFO::Creating boxplot for categorical data, Group vs t__SGB4768
+2024-12-25 10:24:24 INFO::Creating boxplot for categorical data, Group vs t__SGB5190
+2024-12-25 10:24:24 INFO::Creating boxplot for categorical data, Group vs t__SGB9286
+2024-12-25 10:24:24 INFO::Creating boxplot for categorical data, Group vs t__SGB14845
+2024-12-25 10:24:24 INFO::Creating boxplot for categorical data, Group vs t__SGB14888
+2024-12-25 10:24:25 INFO::Creating boxplot for categorical data, Group vs t__SGB4583
+2024-12-25 10:24:25 INFO::Creating boxplot for categorical data, Group vs t__SGB4834
+2024-12-25 10:24:25 INFO::Creating boxplot for categorical data, Group vs t__SGB1871
+2024-12-25 10:24:25 INFO::Creating boxplot for categorical data, Group vs t__SGB15368
+2024-12-25 10:24:26 INFO::Creating boxplot for categorical data, Group vs t__SGB4882
+2024-12-25 10:24:26 INFO::Creating boxplot for categorical data, Group vs t__SGB4706
+2024-12-25 10:24:26 INFO::Creating boxplot for categorical data, Group vs t__SGB4644
+2024-12-25 10:24:26 INFO::Creating boxplot for categorical data, Group vs t__SGB14834
+2024-12-25 10:24:26 INFO::Creating boxplot for categorical data, Group vs t__SGB4665
+2024-12-25 10:24:27 INFO::Creating boxplot for categorical data, Group vs t__SGB6173
+2024-12-25 10:24:27 INFO::Creating boxplot for categorical data, Group vs t__SGB3958
+2024-12-25 10:24:27 INFO::Creating boxplot for categorical data, Group vs t__SGB8026
+2024-12-25 10:24:27 INFO::Creating boxplot for categorical data, Group vs t__SGB4788
+2024-12-25 10:24:27 INFO::Creating boxplot for categorical data, Group vs t__SGB14909
+2024-12-25 10:24:28 INFO::Creating boxplot for categorical data, Group vs t__SGB15346
+2024-12-25 10:24:28 INFO::Creating boxplot for categorical data, Group vs t__SGB3574
+2024-12-25 10:24:28 INFO::Creating boxplot for categorical data, Group vs t__SGB15467
+2024-12-25 10:24:28 INFO::Creating boxplot for categorical data, Group vs t__SGB4779
+2024-12-25 10:24:29 INFO::Creating boxplot for categorical data, Group vs t__SGB1903
+2024-12-25 10:24:29 INFO::Creating boxplot for categorical data, Group vs t__SGB6014
+2024-12-25 10:24:29 INFO::Creating boxplot for categorical data, Group vs t__SGB14127
+2024-12-25 10:24:29 INFO::Creating boxplot for categorical data, Group vs t__SGB5060
+2024-12-25 10:24:29 INFO::Creating boxplot for categorical data, Group vs t__SGB15067
+2024-12-25 10:24:30 INFO::Creating boxplot for categorical data, Group vs t__SGB1855
+2024-12-25 10:24:30 INFO::Creating boxplot for categorical data, Group vs t__SGB4659
+2024-12-25 10:24:30 INFO::Creating boxplot for categorical data, Group vs t__SGB4395
+2024-12-25 10:24:30 INFO::Creating boxplot for categorical data, Group vs t__SGB17152
+2024-12-25 10:24:31 INFO::Creating boxplot for categorical data, Group vs t__SGB79883
+2024-12-25 10:24:31 INFO::Creating boxplot for categorical data, Group vs t__SGB14177
+2024-12-25 10:24:31 INFO::Creating boxplot for categorical data, Group vs t__SGB5180
+2024-12-25 10:24:31 INFO::Creating boxplot for categorical data, Group vs t__SGB9663_group
+2024-12-25 10:24:32 INFO::Creating boxplot for categorical data, Group vs t__SGB15233
+2024-12-25 10:24:32 INFO::Creating boxplot for categorical data, Group vs t__SGB72916
+2024-12-25 10:24:32 INFO::Creating boxplot for categorical data, Group vs t__SGB15146
+2024-12-25 10:24:32 INFO::Creating boxplot for categorical data, Group vs t__SGB8053
+2024-12-25 10:24:32 INFO::Creating boxplot for categorical data, Group vs t__SGB19860_group
+2024-12-25 10:24:33 INFO::Creating boxplot for categorical data, Group vs t__SGB15272
+2024-12-25 10:24:33 INFO::Creating boxplot for categorical data, Group vs t__SGB14143
+2024-12-25 10:24:33 INFO::Creating boxplot for categorical data, Group vs t__SGB2071
+2024-12-25 10:24:33 INFO::Creating boxplot for categorical data, Group vs t__SGB15260
+2024-12-25 10:24:34 INFO::Creating boxplot for categorical data, Group vs t__SGB748
+2024-12-25 10:24:34 INFO::Creating boxplot for categorical data, Group vs t__SGB4777
+2024-12-25 10:24:34 INFO::Creating boxplot for categorical data, Group vs t__SGB3996
+2024-12-25 10:24:34 INFO::Creating boxplot for categorical data, Group vs t__SGB4394
+2024-12-25 10:24:34 INFO::Creating boxplot for categorical data, Group vs t__SGB7253
+2024-12-25 10:24:35 INFO::Creating boxplot for categorical data, Group vs t__SGB4750
+2024-12-25 10:24:35 INFO::Creating boxplot for categorical data, Group vs t__SGB6473
+2024-12-25 10:24:35 INFO::Creating boxplot for categorical data, Group vs t__SGB15022
+2024-12-25 10:24:35 INFO::Creating boxplot for categorical data, Group vs t__SGB4867
+2024-12-25 10:24:35 INFO::Creating boxplot for categorical data, Group vs t__SGB1626
+2024-12-25 10:24:36 INFO::Creating boxplot for categorical data, Group vs t__SGB8056
+2024-12-25 10:24:36 INFO::Creating boxplot for categorical data, Group vs t__SGB3961
+2024-12-25 10:24:36 INFO::Creating boxplot for categorical data, Group vs t__SGB6796
+2024-12-25 10:24:36 INFO::Creating boxplot for categorical data, Group vs t__SGB15121
+2024-12-25 10:24:37 INFO::Creating boxplot for categorical data, Group vs t__SGB4963
+2024-12-25 10:24:37 INFO::Creating boxplot for categorical data, Group vs t__SGB7264
+2024-12-25 10:24:37 INFO::Creating boxplot for categorical data, Group vs t__SGB1962
+2024-12-25 10:24:37 INFO::Creating boxplot for categorical data, Group vs t__SGB1829
+2024-12-25 10:24:38 INFO::Creating boxplot for categorical data, Group vs t__SGB17137_group
