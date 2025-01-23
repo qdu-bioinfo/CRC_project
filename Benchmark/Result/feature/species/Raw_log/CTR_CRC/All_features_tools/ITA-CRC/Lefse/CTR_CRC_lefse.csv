@@ -1,0 +1,7 @@
+"Comparison" "Taxa" "Method" "Group" "LDA" "P.unadj" "P.adj" "Significance"
+"NA|NA|NA|NA|NA|NA|Anaerotignum_faecicola|Anaerotignum_faecicola" "CRC - CTR" "NA|NA|NA|NA|NA|NA|Anaerotignum_faecicola|Anaerotignum_faecicola" "LEfSe" "CRC" 3.24009596970348 0.000430424543669611 0.0412490187683377 "*"
+"NA|NA|NA|NA|NA|NA|Peptostreptococcus_stomatis|Peptostreptococcus_stomatis" "CRC - CTR" "NA|NA|NA|NA|NA|NA|Peptostreptococcus_stomatis|Peptostreptococcus_stomatis" "LEfSe" "CRC" 2.93699759287006 0.000104576828989677 0.0200438922230215 "*"
+"NA|NA|NA|NA|NA|NA|Odoribacter_splanchnicus|Odoribacter_splanchnicus" "CRC - CTR" "NA|NA|NA|NA|NA|NA|Odoribacter_splanchnicus|Odoribacter_splanchnicus" "LEfSe" "CRC" 2.87193464514232 0.000418219216219481 0.0412490187683377 "*"
+"NA|NA|NA|NA|NA|NA|Parvimonas_micra|Parvimonas_micra" "CRC - CTR" "NA|NA|NA|NA|NA|NA|Parvimonas_micra|Parvimonas_micra" "LEfSe" "CRC" 2.36252927943424 5.41919336257016e-05 0.0155801809173892 "*"
+"NA|NA|NA|NA|NA|NA|Gemella_morbillorum|Gemella_morbillorum" "CRC - CTR" "NA|NA|NA|NA|NA|NA|Gemella_morbillorum|Gemella_morbillorum" "LEfSe" "CRC" 2.28893002368516 1.40883025810656e-05 0.00810077398411273 "**"
+"NA|NA|NA|NA|NA|NA|Fusobacterium_nucleatum|Fusobacterium_nucleatum" "CRC - CTR" "NA|NA|NA|NA|NA|NA|Fusobacterium_nucleatum|Fusobacterium_nucleatum" "LEfSe" "CRC" 2.04954700091935 0.000199764649402818 0.0287161683516552 "*"
