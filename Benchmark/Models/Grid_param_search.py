@@ -56,47 +56,47 @@ def select_param():
     Best parameters are saved as CSV files for each level (analysis).
     """
     param_grids = [
-        # {
-        #     'name': 'RandomForest',
-        #     'model': RandomForestClassifier(random_state=42),
-        #     'params': {
-        #         'n_estimators': np.arange(100, 1000, 10),
-        #         'max_depth': np.arange(2, 10, 1),
-        #         'min_samples_split': [2, 3, 4, 5, 6, 7, 8],
-        #         'min_samples_leaf': [2, 3, 4, 5, 6, 7, 8],
-        #     },
-        # },
-        # {
-        #     'name': 'SVM',
-        #     'model': SVC(probability=True, random_state=42),
-        #     'params': {
-        #         'C': [0.01, 0.1, 0.5, 1, 5, 10],
-        #         'kernel': ['linear', 'rbf'],
-        #     },
-        # },
-        # {
-        #     'name': 'XGBoost',
-        #     'model': XGBClassifier(
-        #         use_label_encoder=False,
-        #         eval_metric='logloss',
-        #         random_state=42
-        #     ),
-        #     'params': {
-        #         'n_estimators': np.arange(100, 1000, 10),
-        #         'max_depth': np.arange(2, 10, 1),
-        #         'learning_rate': np.arange(0.01, 0.3, 0.01),
-        #         'subsample': [0.25, 0.5, 0.75, 1.0],
-        #     },
-        # },
-        # {
-        #     'name': 'KNN',
-        #     'model': KNeighborsClassifier(),
-        #     'params': {
-        #         'n_neighbors': [3, 5, 7, 9, 10],
-        #         'weights': ['uniform', 'distance'],
-        #         'metric': ['euclidean', 'manhattan'],
-        #     },
-        # },
+        {
+            'name': 'RandomForest',
+            'model': RandomForestClassifier(random_state=42),
+            'params': {
+                'n_estimators': np.arange(100, 1000, 10),
+                'max_depth': np.arange(2, 10, 1),
+                'min_samples_split': [2, 3, 4, 5, 6, 7, 8],
+                'min_samples_leaf': [2, 3, 4, 5, 6, 7, 8],
+            },
+        },
+        {
+            'name': 'SVM',
+            'model': SVC(probability=True, random_state=42),
+            'params': {
+                'C': [0.01, 0.1, 0.5, 1, 5, 10],
+                'kernel': ['linear', 'rbf'],
+            },
+        },
+        {
+            'name': 'XGBoost',
+            'model': XGBClassifier(
+                use_label_encoder=False,
+                eval_metric='logloss',
+                random_state=42
+            ),
+            'params': {
+                'n_estimators': np.arange(100, 1000, 10),
+                'max_depth': np.arange(2, 10, 1),
+                'learning_rate': np.arange(0.01, 0.3, 0.01),
+                'subsample': [0.25, 0.5, 0.75, 1.0],
+            },
+        },
+        {
+            'name': 'KNN',
+            'model': KNeighborsClassifier(),
+            'params': {
+                'n_neighbors': [3, 5, 7, 9, 10],
+                'weights': ['uniform', 'distance'],
+                'metric': ['euclidean', 'manhattan'],
+            },
+        },
         {
             'name': 'MLP',
             'model': MLP(),

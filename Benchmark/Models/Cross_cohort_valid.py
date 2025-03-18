@@ -6,7 +6,6 @@ from LODO import Lodo_study_study_fig
 import os
 from Benchmark.Models.dataprocess import split_data
 current_file_path = __file__
-# 切割路径并获取上级的上级目录
 new_path = os.path.abspath(current_file_path + "/../..")
 model_type="rf"
 def param(analysis_level,group):
