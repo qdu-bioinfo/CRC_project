@@ -18,16 +18,6 @@ figure_path = sys.path[1] + '\\Result\\figures\\Fig03\\'
 feature_path = sys.path[1] + '\\Result\\feature\\'
 data_path = sys.path[1] + '\\Result\\data\\'
 
-"""
-benchmark中的按照特征频率选特征
-lefse的特征名称是”AT_lefse“
-MaAsLin2的特征名称是”AT_MaAsLin“
-all的特征是”AT_all“
-AT_FR
-AT_FR_ITA
-AT_FR_ITA_US
-AT_FR_ITA_US_JPN
-"""
 
 def optimal_features(sorted_features, data, analysis_level):
     """
