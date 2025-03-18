@@ -220,9 +220,21 @@ for (class_dir in c("class")) {
 ################################################################################
 # Run Analysis for single Study
 ################################################################################
-for (class_dir in  c("class")){
+for (class_dir in  c("class","order","family","genus","species","t_sgb","ko_gene","uniref_family")){
   group <- "CTR_CRC"
   data_type="Raw_log"
+  studies_of_interests <- c('AT-CRC', 'JPN-CRC', 'FR-CRC', 'CHN_WF-CRC', 'ITA-CRC', "DE-CRC", "CHN_HK-CRC", "CHN_SH-CRC", "IND-CRC", "US-CRC")
+  for (studies_of_interest in studies_of_interests){
+    meta_file <- paste0(data_script_dir, "/meta.csv",sep="")
+    feat_file <- paste(data_script_dir, class_dir,"/feature_rare_",group,".csv", sep="")
+    output_dir=paste(feature_script_dir,class_dir,"/",data_type,"/",group,"/All_features_tools/",studies_of_interest,sep='')
+    analyze_microbiome_data(meta_file,feat_file, group, class_dir, output_dir, studies_of_interest,data_type,apply_log =TRUE)
+  }
+}
+
+for (class_dir in  c("class","order","family","genus","species","t_sgb","ko_gene","uniref_family")){
+  group <- "CTR_CRC"
+  data_type="Raw"
   studies_of_interests <- c('AT-CRC', 'JPN-CRC', 'FR-CRC', 'CHN_WF-CRC', 'ITA-CRC', "DE-CRC", "CHN_HK-CRC", "CHN_SH-CRC", "IND-CRC", "US-CRC")
   for (studies_of_interest in studies_of_interests){
     meta_file <- paste0(data_script_dir, "/meta.csv",sep="")
@@ -232,7 +244,6 @@ for (class_dir in  c("class")){
   }
 }
 
-#运行batch的数据
 for (class_dir in  c("class","order","family","genus","species","t_sgb","ko_gene","uniref_family")){
   group <- "CTR_CRC"
   data_type="Batch"
@@ -243,17 +254,7 @@ for (class_dir in  c("class","order","family","genus","species","t_sgb","ko_gene
   analyze_microbiome_data(meta_file,feat_file, group, class_dir, output_dir, studies_of_interest,data_type,apply_log =FALSE)
 }
 
-#运行batch的数据
-for (class_dir in  c("ko_gene")){
-  group <- "CTR_CRC"
-  studies_of_interests <- c("DE-CRC")
-  for (studies_of_interest in studies_of_interests){
-  meta_file <- "C:/Users/sunny/Desktop/论文/meta3.csv"
-  feat_file <- paste("G:/deeplearning/CRC/benchmarker/",class_dir,"/Result/MMUPHin/new3/CTR_CRC/CTR_CRC_adj_batch.csv", sep="")
-  output_dir=paste("G:/deeplearning/CRC/benchmarker/",class_dir,"/Result/feature_selection/new3/Batch/All_features_tools/",studies_of_interest,sep='')
-  analyze_microbiome_data(meta_file,feat_file, group, class_dir, output_dir, studies_of_interest, apply_log = FALSE)
-  }
-}
+
 
 
 
