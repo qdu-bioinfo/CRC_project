@@ -135,7 +135,7 @@ As the best-performing *candidate features* and classification model are establi
 ```
 -  The script **04_feature_frequency.py** calculates the frequency at which each feature is selected by the different tools.
 ```
-  python ./Meta_iTL/script/04_optimalfeatures.py -t CHN_SH-CRC-4 -d Meta_iTL -r S0.3 -f 0  
+  python ./Meta_iTL/script/04_optimalfeatures.py -t CHN_SH-CRC-4 -d Meta_iTL -r S0.3 -f 2  
 ```
 ```
 -t: Specifies the name of the target study.  
