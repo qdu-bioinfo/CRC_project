@@ -71,7 +71,7 @@ def raw_target_funtion(ratio,target_study):
     Find the frequency of features of sample screening in the target domain of transfer learning
     :return:
     """
-    feature_file = f"{feature_path}raw/merge_all_cohort_feature.csv"
+    feature_file = f"{feature_path}Meta_iTL/merge_feature/target_{target_study}/{ratio}/target_{target_study}_feature.csv"
     feature_name = target_study
     output_file = f"{feature_path}Meta_iTL/merge_feature/target_{target_study}/{ratio}/target_{target_study}_feature_frequencies.csv"
     cal_feature_frequency(feature_file, feature_name, "Target", output_file)

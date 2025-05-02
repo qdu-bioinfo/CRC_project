@@ -265,7 +265,7 @@ def cross_validation_baseline():
     feature = pd.read_csv(feature_dir)
 
     meta_feature_all = split_data(analysis_level, group_name, Raw="Raw_log")
-    for study in [["CHN_SH-CRC-2"],["CHN_WF-CRC"]]:
+    for study in [["CHN_SH-CRC-4"],["CHN_WF-CRC"]]:
         meta_feature = meta_feature_all[meta_feature_all["Study"].isin(study)]
         sig_feature = feature[study[0]+'_rf_optimal'].dropna().tolist()
         data = meta_feature.loc[:, sig_feature]

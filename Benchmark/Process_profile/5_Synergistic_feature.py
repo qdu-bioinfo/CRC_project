@@ -18,6 +18,16 @@ figure_path = sys.path[1] + '\\Result\\figures\\Fig03\\'
 feature_path = sys.path[1] + '\\Result\\feature\\'
 data_path = sys.path[1] + '\\Result\\data\\'
 
+"""
+benchmark中的按照特征频率选特征
+lefse的特征名称是”AT_lefse“
+MaAsLin2的特征名称是”AT_MaAsLin“
+all的特征是”AT_all“
+AT_FR
+AT_FR_ITA
+AT_FR_ITA_US
+AT_FR_ITA_US_JPN
+"""
 
 def optimal_features(sorted_features, data, analysis_level):
     """
@@ -101,8 +111,11 @@ def feature_importance(data, num_repeats):
     return feature_order,feature_importances_dict
 def select_top_feature(filename,frequency_thre):
     feature=pd.read_csv(filename)
-    feature = feature[feature["Frequency"] >frequency_thre]
-    select_feature = feature["Feature"]
+    # feature = feature[feature["Frequency"] >frequency_thre]
+    # select_feature = feature["Feature"]
+    select_feature = feature[feature["Frequency"] > frequency_thre].sort_values(
+        by=["Frequency", "Feature"], ascending=[False, True]
+    )["Feature"]
     return select_feature
 def save_feature_importance(filename,feature_importances_dict,frequency_thre):
     feature = pd.read_csv(filename)
@@ -172,6 +185,10 @@ def Synergistic_select_feature(meta_feature, frequence_file, feature_file,class_
         finally_features = mrdd(X, meta_sig_feature.iloc[:, 0])
         finally_features, _, _ = optimal_features(finally_features, meta_sig_feature, class_dir)
 
+    finally_features_df = merged_table[merged_table['Feature'].isin(finally_features)]
+    finally_features_df = finally_features_df.sort_values(by='total_value_norm', ascending=False)
+    finally_features = finally_features_df['Feature'].dropna().tolist()
+
     directory = os.path.dirname(feature_file)
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -190,8 +207,8 @@ def Synergistic_select_feature(meta_feature, frequence_file, feature_file,class_
 def raw_main():
     analysis_levels=["class","order","family","genus","species","t_sgb","ko_gene","uniref_family"]
     group_name="CTR_CRC"
-    #studys = [["FR-CRC", "AT-CRC", "ITA-CRC", "JPN-CRC", "CHN_WF-CRC", "CHN_SH-CRC", "CHN_HK-CRC", "DE-CRC", "IND-CRC","US-CRC"]]
-    studys = [["FR-CRC", "AT-CRC", "ITA-CRC", "JPN-CRC", "CHN_WF-CRC", "CHN_SH-CRC-4","US-CRC-2", "CHN_SH-CRC-3","US-CRC-3"]]
+    studys = [["FR-CRC", "AT-CRC", "ITA-CRC", "JPN-CRC", "CHN_WF-CRC", "CHN_SH-CRC", "CHN_HK-CRC", "DE-CRC", "IND-CRC","US-CRC"]]
+    #studys = [["FR-CRC", "AT-CRC", "ITA-CRC", "JPN-CRC", "CHN_WF-CRC", "CHN_SH-CRC-4","US-CRC-2", "CHN_SH-CRC-3","US-CRC-3"]]
     for analysis_level in analysis_levels:
         for study in studys:
             data_type="Raw_log"

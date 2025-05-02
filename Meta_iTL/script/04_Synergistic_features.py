@@ -1,5 +1,4 @@
 import argparse
-import ast
 import os
 import sys
 import pandas as pd
@@ -62,7 +61,7 @@ def MNN_main(ratio,target_study,frequnency_thre):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Synergistic feature.")
     parser.add_argument("-t", "--target_study", required=True, help="Target study (e.g., CHN_WF-CRC or CHN_SH-CRC-4 ).")
-    parser.add_argument("-d", "--data_type", required=True, help="Data Types (e.g., Meta_iTL or Raw).")
+    parser.add_argument("-d", "--data_type", required=True, help="Data Types (e.g., Meta_iTL or Raw or Target).")
     parser.add_argument("-r", "--ratio", required=True, help="ratio (e.g., S0.2 or S0.3 or S0.4 ...).")
     parser.add_argument("-f", "--frequency_threshold", required=True, help="Frequency Threshold (e.g., 0 or 1...).")
 
@@ -76,8 +75,9 @@ if __name__ == "__main__":
         raise ValueError("Frequency threshold (-f) must be a numeric value.")
 
     if data_type=="Meta_iTL":
-        target_main(ratio, target_study, frequnency_thre)
         MNN_main(ratio, target_study, frequnency_thre)
+    if data_type=="Target":
+        target_main(ratio, target_study, frequnency_thre)
     if data_type=="Raw":
         raw_main(target_study,frequnency_thre)
     print(f"{data_type} Synergistic select feature completed.")

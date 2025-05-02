@@ -1,12 +1,12 @@
-target_study,CHN_WF-CRC_lefse,CHN_WF-CRC_MaAsLin,CHN_WF-CRC_Ancom
-CHN_WF-CRC,Phocaeicola_massiliensis,Blautia_massiliensis,Blautia_massiliensis
-,GGB3256_SGB4303,Phocaeicola_massiliensis,
-,Bacteroides_finegoldii,Bacteroides_finegoldii,
-,Blautia_wexlerae,GGB3256_SGB4303,
-,Anaerobutyricum_hallii,Blautia_wexlerae,
-,Citrobacter_freundii,Anaerobutyricum_hallii,
-,Clostridium_symbiosum,Phocaeicola_plebeius,
-,Blautia_massiliensis,Enterococcus_faecium,
-,Butyricimonas_paravirosa,Clostridium_symbiosum,
-,Lacrimispora_saccharolytica,Citrobacter_freundii,
-,GGB79973_SGB14341,,
+,Unnamed: 0,target_study,CHN_WF-CRC_lefse,CHN_WF-CRC_MaAsLin,CHN_WF-CRC_Ancom,Feature
+0,0,CHN_WF-CRC,Phocaeicola_massiliensis,Blautia_massiliensis,Blautia_massiliensis,Phocaeicola_massiliensis
+1,1,,GGB3256_SGB4303,Phocaeicola_massiliensis,,GGB3256_SGB4303
+2,2,,Bacteroides_finegoldii,Bacteroides_finegoldii,,Bacteroides_finegoldii
+3,3,,Blautia_wexlerae,GGB3256_SGB4303,,Blautia_wexlerae
+4,4,,Anaerobutyricum_hallii,Blautia_wexlerae,,Anaerobutyricum_hallii
+5,5,,Citrobacter_freundii,Anaerobutyricum_hallii,,Citrobacter_freundii
+6,6,,Clostridium_symbiosum,Phocaeicola_plebeius,,Clostridium_symbiosum
+7,7,,Blautia_massiliensis,Enterococcus_faecium,,Blautia_massiliensis
+8,8,,Butyricimonas_paravirosa,Clostridium_symbiosum,,Butyricimonas_paravirosa
+9,9,,Lacrimispora_saccharolytica,Citrobacter_freundii,,Lacrimispora_saccharolytica
+10,10,,GGB79973_SGB14341,,,GGB79973_SGB14341

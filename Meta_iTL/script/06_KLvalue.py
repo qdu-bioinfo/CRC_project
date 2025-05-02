@@ -8,43 +8,37 @@ feature_path = sys.path[1] + '\\Result\\feature\\'
 data_path = sys.path[1] + '\\Result\\data\\'
 figure_path = sys.path[1] + '\\Result\\figures\\'
 param_path=sys.path[1] + '\\Result\\param\\'
+_eps = 1e-10
+def kl_divergence_matrix(A, B):
+    P = A[:, None, :] + _eps   # shape (n,1,d)
+    Q = B[None, :, :] + _eps   # shape (1,m,d)
+    return np.sum(P * np.log(P / Q), axis=2)  # shape (n,m)
+def js_divergence_matrix(A, B):
+    P = A[:, None, :] + _eps    # shape (n,1,d)
+    Q = B[None, :, :] + _eps    # shape (1,m,d)
+    M = 0.5 * (P + Q)           # shape (n,m,d)
 
-def kl_divergence(p, q):
-    p = np.asarray(p, dtype=np.float64) + 1e-10  # 避免除零问题
-    q = np.asarray(q, dtype=np.float64) + 1e-10
-    return np.sum(p * np.log(p / q))
+    kl_PM = np.sum(P * np.log(P / M), axis=2)  # D_KL(P||M), shape (n,m)
+    kl_QM = np.sum(Q * np.log(Q / M), axis=2)  # D_KL(Q||M), shape (n,m)
 
-def js_divergence(p, q):
-    p = np.asarray(p, dtype=np.float64) + 1e-10  # 避免除零问题
-    q = np.asarray(q, dtype=np.float64) + 1e-10
-    m = 0.5 * (p + q)
-    return 0.5 * kl_divergence(p, m) + 0.5 * kl_divergence(q, m)
-def compute_kl_between_distributions(data1, data2):
-    if data1.shape[1] != data2.shape[1]:
-        raise ValueError("Data column number does not match")
-    kl_values = []
-    for i in range(data1.shape[0]):
-        for j in range(data2.shape[0]):
-            kl_values.append(kl_divergence(data1[i, :], data2[j, :]))
-    return np.mean(kl_values)
-def compute_js_between_distributions(data1, data2):
-    if data1.shape[1] != data2.shape[1]:
-        raise ValueError("Data column number does not match")
-    js_values = []
-    for i in range(data1.shape[0]):
-        for j in range(data2.shape[0]):
-            js_values.append(js_divergence(data1[i, :], data2[j, :]))
-    return np.mean(js_values)
-def compute_distance_matrix(data1, data2, metric):
-    distance_matrix = np.zeros((data1.shape[0], data2.shape[0]))
-    for i in range(data1.shape[0]):
-        for j in range(data2.shape[0]):
-            if metric == "KL":
-                distance_matrix[i, j] = kl_divergence(data1[i, :], data2[j, :])
-            elif metric == "JS":
-                distance_matrix[i, j] = js_divergence(data1[i, :], data2[j, :])
-    return distance_matrix
-for ratio in ["S0.5"]:
+    return 0.5 * (kl_PM + kl_QM)
+def compute_kl_between_distributions(A, B):
+    return kl_divergence_matrix(A, B).mean()
+def compute_js_between_distributions(A, B):
+    return js_divergence_matrix(A, B).mean()
+def bootstrap_js(data1, data2, n_repeat=100):
+    n1, n2 = data1.shape[0], data2.shape[0]
+    boot_means = np.empty(n_repeat, dtype=np.float64)
+    for i in range(n_repeat):
+        idx1 = np.random.randint(0, n1, size=n1)
+        idx2 = np.random.randint(0, n2, size=n2)
+        A = data1[idx1]
+        B = data2[idx2]
+        js_mat = js_divergence_matrix(A, B)
+        boot_means[i] = js_mat.mean()
+    return boot_means.mean(), np.percentile(boot_means, 2.5), np.percentile(boot_means, 97.5)
+
+for ratio in ["S0.2","S0.3","S0.4","S0.5","S0.6"]:
     # Create a directory for the current ratio
     ratio_dir = f"{figure_path}/JS_KL/{ratio}/"
     os.makedirs(ratio_dir, exist_ok=True)
@@ -52,11 +46,11 @@ for ratio in ["S0.5"]:
     # Initialize an empty DataFrame to store results for this ratio
     all_results = pd.DataFrame()
 
-    target_study = "CHN_SH-CRC-4"
-    source_study = "FR-CRC_AT-CRC_ITA-CRC_JPN-CRC_US-CRC-2_CHN_WF-CRC_CHN_SH-CRC-2_US-CRC-3"
+    # target_study = "CHN_SH-CRC-4"
+    # source_study = "FR-CRC_AT-CRC_ITA-CRC_JPN-CRC_US-CRC-2_CHN_WF-CRC_CHN_SH-CRC-2_US-CRC-3"
 
-    # target_study="CHN_WF-CRC"
-    # source_study="FR-CRC_AT-CRC_ITA-CRC_JPN-CRC_US-CRC-2_US-CRC-3_CHN_SH-CRC-4_CHN_SH-CRC-2"
+    target_study="CHN_WF-CRC"
+    source_study="FR-CRC_AT-CRC_ITA-CRC_JPN-CRC_US-CRC-2_US-CRC-3_CHN_SH-CRC-4_CHN_SH-CRC-2"
 
     # Load the target dataset
     target = pd.read_csv(
@@ -75,17 +69,17 @@ for ratio in ["S0.5"]:
     Meta_iTL = Meta_iTL.drop(columns=['Study'], errors='ignore')
 
     feature = pd.read_csv(f"{feature_path}Meta_iTL/merge_feature/target_{target_study}/{ratio}/Meta_iTL_optimal.csv")
-
     feature_target = pd.read_csv(f"{feature_path}Meta_iTL/merge_feature/target_{target_study}/{ratio}/target_optimal.csv")
-    frequency_feature_name2 = "Target_" + source_study + "_" + target_study + "_rf_optimal"
+    frequency_feature_name2 = "Target_" + source_study + "_" + target_study + "_synergistic"
     finally_rf_optimal_feature2 = feature_target[frequency_feature_name2].dropna().tolist()
-    frequency_feature_name = source_study + "_" + target_study + "_rf_optimal"
+    frequency_feature_name = source_study + "_" + target_study + "_synergistic"
     finally_rf_optimal_feature = feature[frequency_feature_name].dropna().tolist()
-    optimal_features_set = list(dict.fromkeys(finally_rf_optimal_feature2 + finally_rf_optimal_feature))
+    #optimal_features_set = list(dict.fromkeys(finally_rf_optimal_feature2 + finally_rf_optimal_feature))
+    optimal_features_set = list(dict.fromkeys(finally_rf_optimal_feature))
     Meta_iTL_feature =optimal_features_set
 
     feature_finally = pd.read_csv(f"{feature_path}raw/{source_study}_optimal.csv")
-    Raw_feature=pd.Series(feature_finally[f"{source_study}_rf_optimal"]).dropna().tolist()
+    Raw_feature=pd.Series(feature_finally[f"{source_study}_synergistic"]).dropna().tolist()
     # Load the original dataset
     meta_all = pd.read_csv(data_path+"/meta.csv")
     meta_all = meta_all[meta_all['Study'].isin(source_study.split("_")) & meta_all['Group'].isin(["ADA", "CTR"])]

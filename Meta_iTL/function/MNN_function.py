@@ -62,7 +62,7 @@ def select_feature(analysis_level, group_name, feature_name,Raw):
         if group_name=="CTR_CRC":
             feature_select = feature['FR-CRC_AT-CRC_ITA-CRC_JPN-CRC_CHN_WF-CRC_CHN_SH-CRC_CHN_HK-CRC_DE-CRC_IND-CRC_US-CRC_rf_optimal'].dropna().tolist()
         if group_name == "CTR_ADA":
-            feature_select=feature['AT-CRC_JPN-CRC_FR-CRC_CHN_WF-CRC_ITA-CRC_CHN_SH-CRC-3_US-CRC-3_CHN_SH-CRC-2_US-CRC-2_rf_optimal'].dropna().tolist()
+            feature_select=feature['AT-CRC_JPN-CRC_FR-CRC_CHN_WF-CRC_ITA-CRC_CHN_SH-CRC-2_US-CRC-3_CHN_SH-CRC-4_US-CRC-2_rf_optimal'].dropna().tolist()
     elif feature_name=="lefse":
         feature.fillna(1, inplace=True)
         feature_select = feature[feature[feature_name] < 0.05].index.tolist()
@@ -211,7 +211,7 @@ def get_kfold(data, meta_group, model_type, **params):
     else:
         raise ValueError("Invalid model type")
     meta_group = meta_group['Group']
-    meta_group = meta_group.astype(int)  # 转换为整数类型
+    meta_group = meta_group.astype(int)  
 
     for train_index, test_index in splitor.split(data, meta_group):
         X_train, X_test = data.iloc[train_index].values, data.iloc[test_index].values
